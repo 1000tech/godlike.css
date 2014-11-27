@@ -2,8 +2,10 @@ html{height:100%}
 body{min-height:100%;position:relative;overflow-x:hidden;word-wrap:break-word;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;-ms-text-size-adjust: 100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 body,h1,h2,h3,h4,h5,h6,div,ul,p,figure{margin:0;padding:0;box-sizing:border-box}
 header,nav,main,section,article,aside,footer{display:block}
-a,img,input,textarea,label,select,button{outline:none;border:0}a{transition:background .25s,box-shadow .25s,color .25s;}
-input,label,select{vertical-align:middle}label{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}
+a,img,input,textarea,label,select,button{outline:none;border:0}
+a{transition:background .25s,box-shadow .25s,color .25s;}
+input,label,select{vertical-align:middle}
+label{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}
 input[type='submit'],input[type='checkbox'],input[type='radio'],label,select,button{cursor:pointer}
 p{-moz-hyphens:auto;-ms-hyphens:auto}
 li{list-style:none}

@@ -25,21 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="best.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/best.css">
+      <file leaf-file-name="godlike.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/godlike.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24772313" vertical-offset="0" max-vertical-offset="549">
-              <caret line="8" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="best.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/best.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.18579236" vertical-offset="0" max-vertical-offset="549">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -57,6 +47,8 @@
       <list>
         <option value="$PROJECT_DIR$/best.css" />
         <option value="$PROJECT_DIR$/best.min.css" />
+        <option value="$PROJECT_DIR$/godlike.min.css" />
+        <option value="$PROJECT_DIR$/godlike.css" />
       </list>
     </option>
   </component>
@@ -179,18 +171,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/best.min.css">
+    <entry file="file://$PROJECT_DIR$/godlike.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.18579236" vertical-offset="0" max-vertical-offset="549">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/best.css">
+    <entry file="file://$PROJECT_DIR$/godlike.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24772313" vertical-offset="0" max-vertical-offset="549">
-          <caret line="8" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.18579236" vertical-offset="0" max-vertical-offset="549">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
           <folding />
         </state>
       </provider>
