@@ -1,2 +1,2 @@
 # godlike.css
-CSS для стандартизации верстки и улучшения юзабилити веб-приложения. 
+CSS for layout standardization and to improve the usability of web applications. 
