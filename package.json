@@ -1,0 +1,11 @@
+{
+  "name": "godlike.css",
+  "version": "1.1.2",
+  "description": "CSS for layout standardization and to improve the usability of web applications from 1000.tech",
+  "author": "1000.tech <info@1000.tech>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1000tech/godlike.css"
+  },
+  "license": "WTFPL"
+}
