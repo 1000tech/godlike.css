@@ -1,4 +1,4 @@
-/*! GodlikeCSS v1.1.0 | (c) 2016 1000.tech | WTFPL Licence | https://github.com/1000tech/godlike.css */
+/*! GodlikeCSS v2.0.0 | (c) 2016 1000.tech | WTFPL Licence | https://github.com/1000tech/godlike.css */
 
 @charset "UTF-8"
 
@@ -39,8 +39,8 @@ a, img, input, button, textarea, optgroup, select
     padding 0
 
 a
+    cursor pointer
     text-decoration none
-    transition color .25s, opacity .25s
     &:active, &:hover, &:focus
         outline 0
 
@@ -63,7 +63,8 @@ button, input
         border 0
         padding 0
 
-button
+// Add default animation
+button, a
     transition color .25s, background .25s, opacity .25s
 
 // Remove styling in WebKit
@@ -96,6 +97,13 @@ ul, ol
     list-style none
     ul, ol
         margin 0
+
+// Valid stylization in text
+p
+    ul, ol
+        list-style disc
+    a
+        text-decoration underline
 
 table
     border-spacing 0

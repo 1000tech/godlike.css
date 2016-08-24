@@ -1,5 +1,4 @@
-/*! GodlikeCSS v1.1.0 | (c) 2016 1000.tech | WTFPL Licence | https://github.com/1000tech/godlike.css */
-
+/* GodlikeCSS v2.0.0 | (c) 2016 1000.tech | WTFPL Licence | https://github.com/1000tech/godlike.css */
 @charset "UTF-8";
 
 * {
@@ -62,8 +61,8 @@ select {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
-    transition: color 0.25s, opacity 0.25s;
 }
 
 a:active,
@@ -100,7 +99,8 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-button {
+button,
+a {
     transition: color 0.25s, background 0.25s, opacity 0.25s;
 }
 
@@ -155,6 +155,15 @@ ol ul,
 ul ol,
 ol ol {
     margin: 0;
+}
+
+p ul,
+p ol {
+    list-style: disc;
+}
+
+p a {
+    text-decoration: underline;
 }
 
 table {
