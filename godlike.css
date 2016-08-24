@@ -1,13 +1,18 @@
+/*! GodlikeCSS v1.1.0 | (c) 2016 1000.tech | https://github.com/1000tech/godlike.css | WTFPL */
+
 @charset "UTF-8";
+
 * {
     box-sizing: border-box;
 }
+
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
 body {
     min-height: 100%;
     overflow: auto;
@@ -20,6 +25,7 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
 article,
 aside,
 details,
@@ -34,6 +40,7 @@ section,
 summary {
     display: block;
 }
+
 a,
 img,
 input,
@@ -45,6 +52,7 @@ select {
     color: inherit;
     line-height: inherit;
     text-transform: inherit;
+    text-shadow: inherit;
     outline: none;
     border: none;
     background: none;
@@ -52,26 +60,59 @@ select {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
-    transition: color 0.25s;
+    transition: color 0.25s, opacity 0.25s;
 }
+
 a:active,
 a:hover,
 a:focus {
     outline: 0;
 }
+
 b,
 strong {
     font-weight: 700;
 }
+
 img {
     border: 0;
     vertical-align: middle;
 }
+
 button,
 label,
-select,
+select {
+    user-select: none;
+    cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+    pointer-events: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button {
+    transition: color 0.25s, background 0.25s, opacity 0.25s;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+input::-webkit-search-cancel-button,
+input::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
 input[type="button"],
 input[type="reset"],
 input[type='submit'],
@@ -80,24 +121,12 @@ input[type='radio'] {
     user-select: none;
     cursor: pointer;
 }
-button[disabled],
-input[disabled] {
-    pointer-events: none;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-input,
-input::-webkit-search-cancel-button,
-input::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
+
 textarea {
     overflow: auto;
     resize: none;
 }
+
 h1,
 h2,
 h3,
@@ -111,32 +140,39 @@ h6 {
     color: inherit;
     margin: 0;
 }
+
 ul,
 ol {
     margin: 0 0 10px;
     padding: 0;
-    moz-padding: 0;
-    webkit-padding: 0;
+    -moz-padding: 0;
+    -webkit-padding: 0;
+    list-style: none;
 }
+
 ul ul,
 ol ul,
 ul ol,
 ol ol {
     margin: 0;
 }
+
 table {
     border-spacing: 0;
     border-collapse: collapse;
 }
+
 td,
 th {
     padding: 0;
     text-align: center;
 }
+
 :-moz-placeholder,
 ::-moz-placeholder {
     opacity: 1;
 }
+
 @-ms-viewport {
     width: device-width;
 }

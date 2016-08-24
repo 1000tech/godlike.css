@@ -1,3 +1,5 @@
+/*! GodlikeCSS v1.1.0 | (c) 2016 1000.tech | https://github.com/1000tech/godlike.css | WTFPL */
+
 @charset "UTF-8"
 
 *
@@ -14,8 +16,8 @@ body
     overflow-x hidden
     word-wrap break-word
     text-rendering optimizeSpeed
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
     -webkit-text-size-adjust 100%
     -ms-text-size-adjust 100%
     -webkit-tap-highlight-color rgba(0, 0, 0, 0)
@@ -28,6 +30,7 @@ a, img, input, button, textarea, optgroup, select
     color inherit
     line-height inherit
     text-transform inherit
+    text-shadow inherit
     outline none
     border none
     background none
@@ -37,7 +40,7 @@ a, img, input, button, textarea, optgroup, select
 
 a
     text-decoration none
-    transition color .25s
+    transition color .25s, opacity .25s
     &:active, &:hover, &:focus
         outline 0
 
@@ -48,9 +51,7 @@ img
     border 0
     vertical-align middle
 
-button, label, select,
-input[type="button"], input[type="reset"],
-input[type='submit'], input[type='checkbox'], input[type='radio']
+button, label, select
     user-select none
     cursor pointer
 
@@ -62,9 +63,18 @@ button, input
         border 0
         padding 0
 
+button
+    transition color .25s, background .25s, opacity .25s
+
 // Remove styling in WebKit
-input, input::-webkit-search-cancel-button, input::-webkit-search-decoration
+input
     -webkit-appearance: none;
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration
+        -webkit-appearance: none;
+    // Cursor pointer on button
+    &[type="button"], &[type="reset"], &[type='submit'], &[type='checkbox'], &[type='radio']
+        user-select none
+        cursor pointer
 
 textarea
     overflow auto
@@ -81,8 +91,9 @@ h1, h2, h3, h4, h5, h6
 ul, ol
     margin 0 0 10px
     padding 0
-    moz-padding 0
-    webkit-padding 0
+    -moz-padding 0
+    -webkit-padding 0
+    list-style none
     ul, ol
         margin 0
 
@@ -98,5 +109,6 @@ td, th
 :-moz-placeholder, ::-moz-placeholder
     opacity 1
 
+// Fix viewport in IE 10 Mobile
 @-ms-viewport
     width device-width
