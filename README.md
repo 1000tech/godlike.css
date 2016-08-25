@@ -20,11 +20,11 @@ A more modern alternative to reset.css and normalize.css
 
 ##### Bower:
 
-    $ bower i godlike.css
+    $ bower i godlike.css --save
 
 ##### NPM:
 
-    $ npm i --save godlike.css
+    $ npm i godlike.css --save
     
 ##### Download:
 
@@ -34,19 +34,19 @@ A more modern alternative to reset.css and normalize.css
 
 ### Bower
 
-##### HTML:
+**HTML:**
 
 ```html
 <link rel="stylesheet" href="bower_components/godlike.css/godlike.css">
 ```
 
-##### CSS:
+**CSS:**
 
 ```css
 @import '../bower_components/godlike.css/godlike.css';
 ```
 
-##### Sass, Less, Stylus:
+**Sass, Less, Stylus:**
 
 ```css
 @import '../bower_components/godlike.css/godlike';
@@ -62,9 +62,3 @@ PostCSS and [postcss-import](https://github.com/postcss/postcss-import):
 
 ## Demo
 Used on [MobiDevices](http://mobidevices.ru)
-
-## Copyright
-
-Vadim Zaretskiy [1000.tech](http://1000.tech)
-
-License: WTFPL
