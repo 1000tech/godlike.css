@@ -1,11 +1,11 @@
 {
   "name": "godlike.css",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "homepage": "https://github.com/1000tech/godlike.css",
   "authors": [
     "1000.tech <info@1000.tech>"
   ],
-  "description": "CSS for layout standardization and to improve the usability of web applications from 1000.tech",
+  "description": "CSS for layout standardization and usability of web applications",
   "main": "godlike.css",
   "keywords": [
     "Godlike",
