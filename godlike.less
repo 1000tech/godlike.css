@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
-* {
+*, :before, :after {
     box-sizing: border-box;
-    &:before, &:after{
-        box-sizing: border-box;
-    }
 }
 
 html, body {
@@ -61,7 +58,11 @@ img {
     vertical-align: middle;
 }
 
+// Cursor pointer on button
 button, label, select {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
 }
@@ -78,7 +79,7 @@ button, input {
 }
 
 // Add default animation
-button, a{
+button, a {
     transition: color .25s, background .25s, opacity .25s;
 }
 
@@ -90,6 +91,9 @@ input {
     }
     // Cursor pointer on button
     &[type="button"], &[type="reset"], &[type='submit'], &[type='checkbox'], &[type='radio'] {
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
         user-select: none;
         cursor: pointer;
     }
@@ -114,18 +118,21 @@ ul, ol {
     padding: 0;
     -moz-padding: 0;
     -webkit-padding: 0;
-    list-style: none;
     ul, ol{
         margin: 0;
     }
 }
 
+ul {
+    list-style: none;
+}
+
 // Valid stylization in text
-p{
-    ul, ol{
+p {
+    ul {
         list-style: disc;
     }
-    a{
+    a {
         text-decoration: underline;
     }
 }

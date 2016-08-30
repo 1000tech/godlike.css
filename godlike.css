@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-*, *:before, *:after {
+*, :before, :after{
     box-sizing: border-box;
 }
 
@@ -83,6 +83,9 @@ img {
 button,
 label,
 select {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
 }
@@ -117,6 +120,9 @@ input[type="reset"],
 input[type='submit'],
 input[type='checkbox'],
 input[type='radio'] {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
 }
@@ -146,7 +152,6 @@ ol {
     padding: 0;
     -moz-padding: 0;
     -webkit-padding: 0;
-    list-style: none;
 }
 
 ul ul,
@@ -156,8 +161,11 @@ ol ol {
     margin: 0;
 }
 
-p ul,
-p ol {
+ul {
+    list-style: none;
+}
+
+p ul {
     list-style: disc;
 }
 
