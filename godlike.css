@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-*, :before, :after{
+*,
+:before,
+:after {
     box-sizing: border-box;
 }
 
@@ -165,11 +167,21 @@ ul {
     list-style: none;
 }
 
-p ul {
+p,
+form {
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+p ul,
+form ul {
     list-style: disc;
 }
 
-p a {
+p a,
+form a {
     text-decoration: underline;
 }
 

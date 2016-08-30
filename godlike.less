@@ -128,7 +128,11 @@ ul {
 }
 
 // Valid stylization in text
-p {
+p, form {
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
     ul {
         list-style: disc;
     }
