@@ -180,8 +180,7 @@ form ul {
     list-style: disc;
 }
 
-p a,
-form a {
+p a {
     text-decoration: underline;
 }
 
