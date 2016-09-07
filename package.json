@@ -1,6 +1,6 @@
 {
   "name": "godlike.css",
-  "version": "2.0.8",
+  "version": "3.0.0",
   "description": "CSS for layout standardization and usability of web applications",
   "author": "1000.tech <info@1000.tech>",
   "repository": {
@@ -25,5 +25,15 @@
     "Stylus",
     "SCSS",
     "1000.tech"
-  ]
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-stylus": "^2.5.0",
+    "gulp-watch": "^4.3.9",
+    "nib": "^1.1.0",
+    "run-sequence": "^1.2.2"
+  }
 }

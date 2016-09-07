@@ -14,11 +14,21 @@ body
     overflow-x hidden
     word-wrap break-word
     text-rendering optimizeSpeed
+
+    // Fix rendering fonts
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
+
+    // Fix text zoom on Mobile Devices
     -webkit-text-size-adjust 100%
     -ms-text-size-adjust 100%
+
+    // Fix tap color
     -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+
+    // Remove 300ms delay on Mobile Devices
+    -ms-touch-action manipulation
+    touch-action manipulation
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary
     display block
@@ -42,6 +52,10 @@ a
     &:active, &:hover, &:focus
         outline 0
 
+// Add default animation
+a, button
+    transition color .25s, background .25s, opacity .25s
+
 b, strong
     font-weight 700
 
@@ -50,37 +64,25 @@ img
     vertical-align middle
 
 // Cursor pointer on button
-button, label, select
+button, label, select, [type="button"], [type="reset"], [type='submit'], [type='checkbox'], [type='radio']
     -ms-user-select none
     -moz-user-select none
     -webkit-user-select none
     user-select none
     cursor pointer
 
-button, input
+input, button
     &[disabled]
         pointer-events none
+
     // Remove padding in FF
     &::-moz-focus-inner
         border 0
         padding 0
 
-// Add default animation
-button, a
-    transition color .25s, background .25s, opacity .25s
-
 // Remove styling in WebKit
-input
+input, textarea, select
     -webkit-appearance: none;
-    &::-webkit-search-cancel-button, &::-webkit-search-decoration
-        -webkit-appearance: none;
-    // Cursor pointer on button
-    &[type="button"], &[type="reset"], &[type='submit'], &[type='checkbox'], &[type='radio']
-        -ms-user-select none
-        -moz-user-select none
-        -webkit-user-select none
-        user-select none
-        cursor pointer
 
 textarea
     overflow auto
@@ -99,11 +101,18 @@ ul, ol
     padding 0
     -moz-padding 0
     -webkit-padding 0
+    list-style none
     ul, ol
         margin 0
 
-ul
-    list-style none
+// Fix align counter
+ol
+    counter-reset count
+    li
+        &:before
+            content counter(count) '.'
+            counter-increment count
+            padding-right .3em
 
 // Valid stylization in text
 p, form
@@ -117,10 +126,13 @@ p, form
 p
     a
         text-decoration underline
+    img
+        max-width 100%
 
 table
     border-spacing 0
     border-collapse collapse
+    outline none
 
 td, th
     padding 0
