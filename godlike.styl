@@ -3,6 +3,9 @@
 *, :before, :after
     box-sizing border-box
 
+&:active, &:hover, &:focus
+    outline 0
+
 html, body
     height 100%
     margin 0
@@ -39,7 +42,6 @@ a, img, input, button, textarea, optgroup, select
     line-height inherit
     text-transform inherit
     text-shadow inherit
-    outline none
     border none
     background none
     box-shadow none
@@ -49,8 +51,6 @@ a, img, input, button, textarea, optgroup, select
 a
     cursor pointer
     text-decoration none
-    &:active, &:hover, &:focus
-        outline 0
 
 // Add default animation
 a, button
@@ -97,22 +97,17 @@ h1, h2, h3, h4, h5, h6
     margin 0
 
 ul, ol
-    margin 0 0 10px
+    margin 0 0 1em
     padding 0
     -moz-padding 0
     -webkit-padding 0
     list-style none
     ul, ol
         margin 0
-
-// Fix align counter
-ol
-    counter-reset count
-    li
+        padding 0 0 0 1em
+    > li
         &:before
-            content counter(count) '.'
-            counter-increment count
-            padding-right .3em
+            padding-right .5em
 
 // Valid stylization in text
 p, form
@@ -120,8 +115,24 @@ p, form
     -moz-hyphens auto
     -webkit-hyphens auto
     hyphens auto
+
+    // Fix align marker
     ul
-        list-style disc
+        > li
+            &:before
+                content '•'
+                font-family Tahoma
+            li
+                &:before
+                    content '○'
+
+    // Fix align counter
+    ol
+        counter-reset count
+        > li
+            &:before
+                content counter(count) '.'
+                counter-increment count
 
 p
     a
@@ -132,7 +143,6 @@ p
 table
     border-spacing 0
     border-collapse collapse
-    outline none
 
 td, th
     padding 0

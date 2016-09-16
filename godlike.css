@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:active,:hover,:focus {
+  outline: 0;
+}
+
 html,body {
   height: 100%;
   margin: 0;
@@ -35,7 +39,6 @@ a,img,input,button,textarea,optgroup,select {
   line-height: inherit;
   text-transform: inherit;
   text-shadow: inherit;
-  outline: none;
   border: none;
   background: none;
   box-shadow: none;
@@ -46,10 +49,6 @@ a,img,input,button,textarea,optgroup,select {
 a {
   cursor: pointer;
   text-decoration: none;
-}
-
-a:active,a:hover,a:focus {
-  outline: 0;
 }
 
 a,button {
@@ -101,7 +100,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 ul,ol {
-  margin: 0 0 10px;
+  margin: 0 0 1em;
   padding: 0;
   -moz-padding: 0;
   -webkit-padding: 0;
@@ -110,16 +109,11 @@ ul,ol {
 
 ul ul,ol ul,ul ol,ol ol {
   margin: 0;
+  padding: 0 0 0 1em;
 }
 
-ol {
-  counter-reset: count;
-}
-
-ol li:before {
-  content: counter(count) '.';
-  counter-increment: count;
-  padding-right: 0.3em;
+ul > li:before,ol > li:before {
+  padding-right: 0.5em;
 }
 
 p,form {
@@ -129,8 +123,22 @@ p,form {
   hyphens: auto;
 }
 
-p ul,form ul {
-  list-style: disc;
+p ul > li:before,form ul > li:before {
+  content: '•';
+  font-family: Tahoma;
+}
+
+p ul > li li:before,form ul > li li:before {
+  content: '○';
+}
+
+p ol,form ol {
+  counter-reset: count;
+}
+
+p ol > li:before,form ol > li:before {
+  content: counter(count) '.';
+  counter-increment: count;
 }
 
 p a {
@@ -144,7 +152,6 @@ p img {
 table {
   border-spacing: 0;
   border-collapse: collapse;
-  outline: none;
 }
 
 td,th {
