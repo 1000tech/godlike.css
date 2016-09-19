@@ -100,20 +100,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 ul,ol {
-  margin: 0 0 1em;
+  margin: 0;
   padding: 0;
   -moz-padding: 0;
   -webkit-padding: 0;
   list-style: none;
-}
-
-ul ul,ol ul,ul ol,ol ol {
-  margin: 0;
-  padding: 0 0 0 1em;
-}
-
-ul > li:before,ol > li:before {
-  padding-right: 0.5em;
 }
 
 p,form {
@@ -121,6 +112,19 @@ p,form {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+
+p ul,form ul,p ol,form ol {
+  margin: 0 0 1em;
+}
+
+p ul ul,form ul ul,p ol ul,form ol ul,p ul ol,form ul ol,p ol ol,form ol ol {
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+p ul > li:before,form ul > li:before,p ol > li:before,form ol > li:before {
+  padding-right: 0.5em;
 }
 
 p ul > li:before,form ul > li:before {
