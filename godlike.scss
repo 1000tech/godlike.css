@@ -122,11 +122,17 @@ ul, ol {
 }
 
 // Valid stylization in text
-p, form {
+p {
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+    a {
+        text-decoration: underline;
+    }
+    img {
+        max-width: 100%;
+    }
 
     // Add margins
     ul, ol {
@@ -166,15 +172,6 @@ p, form {
                 counter-increment: count;
             }
         }
-    }
-}
-
-p {
-    a {
-        text-decoration: underline;
-    }
-    img {
-        max-width: 100%;
     }
 }
 
