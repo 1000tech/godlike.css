@@ -19,7 +19,6 @@ body {
   overflow: auto;
   overflow-x: hidden;
   word-wrap: break-word;
-  text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -83,6 +82,14 @@ input::-moz-focus-inner,button::-moz-focus-inner {
 
 input,textarea,select {
   -webkit-appearance: none;
+}
+
+input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 textarea {

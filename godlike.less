@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-&:active, &:hover, &:focus {
+:active, :hover, :focus {
     outline: 0;
 }
 
@@ -19,7 +19,6 @@ body {
     overflow: auto;
     overflow-x: hidden;
     word-wrap: break-word;
-    text-rendering: optimizeSpeed;
 
     // Fix rendering fonts
     -webkit-font-smoothing: antialiased;
@@ -97,6 +96,15 @@ input, button {
 // Remove styling in WebKit
 input, textarea, select {
     -webkit-appearance: none;
+}
+
+input{
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration, &::-webkit-outer-spin-button, &::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+    }
+    &[type='number']{
+        -moz-appearance: textfield;
+    }
 }
 
 textarea {
