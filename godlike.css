@@ -41,6 +41,7 @@ a,img,input,button,textarea,optgroup,select {
   border: none;
   background: none;
   box-shadow: none;
+  border-radius: 0;
   margin: 0;
   padding: 0;
 }
@@ -78,10 +79,6 @@ input[disabled],button[disabled] {
 input::-moz-focus-inner,button::-moz-focus-inner {
   border: 0;
   padding: 0;
-}
-
-input,textarea,select {
-  -webkit-appearance: none;
 }
 
 input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {

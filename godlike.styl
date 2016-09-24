@@ -44,6 +44,7 @@ a, img, input, button, textarea, optgroup, select
     border none
     background none
     box-shadow none
+    border-radius 0
     margin 0
     padding 0
 
@@ -62,7 +63,7 @@ img
     border 0
     vertical-align middle
 
-// Cursor pointer on button
+// Remove user-select and add cursor pointer on button
 button, label, select, [type="button"], [type="reset"], [type='submit'], [type='checkbox'], [type='radio']
     -ms-user-select none
     -moz-user-select none
@@ -78,10 +79,6 @@ input, button
     &::-moz-focus-inner
         border 0
         padding 0
-
-// Remove styling in WebKit
-input, textarea, select
-    -webkit-appearance none
 
 input
     &::-webkit-search-cancel-button, &::-webkit-search-decoration, &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
