@@ -51,8 +51,8 @@ a {
   text-decoration: none;
 }
 
-a,button {
-  transition: color 0.25s, background 0.25s, opacity 0.25s;
+a,button,[type="button"],[type="submit"] {
+  transition: color 0.2s, background 0.2s, opacity 0.2s;
 }
 
 b,strong {
@@ -64,7 +64,7 @@ img {
   vertical-align: middle;
 }
 
-button,label,select,[type="button"],[type="reset"],[type='submit'],[type='checkbox'],[type='radio'] {
+button,label,select,[type="button"],[type='submit'],[type="reset"],[type='checkbox'],[type='radio'] {
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -81,7 +81,7 @@ input::-moz-focus-inner,button::-moz-focus-inner {
   padding: 0;
 }
 
-input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+input[type='search'],input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
