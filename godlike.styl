@@ -15,6 +15,8 @@ body
     min-height 100%
     overflow auto
     overflow-x hidden
+
+    // Wrap text
     word-wrap break-word
 
     // Fix rendering fonts
@@ -53,9 +55,10 @@ a
     text-decoration none
 
 // Add default animation
-a, button
-    transition color .25s, background .25s, opacity .25s
+a, button, [type="button"], [type="submit"]
+    transition color .2s, background .2s, opacity .2s
 
+// Fix font-weight
 b, strong
     font-weight 700
 
@@ -64,7 +67,7 @@ img
     vertical-align middle
 
 // Remove user-select and add cursor pointer on button
-button, label, select, [type="button"], [type="reset"], [type='submit'], [type='checkbox'], [type='radio']
+button, label, select, [type="button"], [type='submit'], [type="reset"], [type='checkbox'], [type='radio']
     -ms-user-select none
     -moz-user-select none
     -webkit-user-select none
@@ -81,7 +84,7 @@ input, button
         padding 0
 
 input
-    &::-webkit-search-cancel-button, &::-webkit-search-decoration, &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+    &[type='search'], &::-webkit-search-cancel-button, &::-webkit-search-decoration, &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
         -webkit-appearance none
     &[type='number']
         -moz-appearance textfield
@@ -98,7 +101,7 @@ h1, h2, h3, h4, h5, h6
     color inherit
     margin 0
 
-ul, ol
+ul, ol, menu
     margin 0
     padding 0
     -moz-padding 0
@@ -106,20 +109,16 @@ ul, ol
     list-style none
 
 // Valid stylization in text
-p
-    -ms-hyphens auto
-    -moz-hyphens auto
-    -webkit-hyphens auto
-    hyphens auto
+article
     a
         text-decoration underline
     img
         max-width 100%
 
     // Add margins
-    ul, ol
+    ul, ol, menu
         margin 0 0 1em
-        ul, ol
+        ul, ol, menu
             margin 0
             padding 0 0 0 1em
         > li
@@ -127,7 +126,7 @@ p
                 padding-right .5em
 
     // Fix align marker
-    ul
+    ul, menu
         > li
             &:before
                 content '•'
@@ -143,6 +142,13 @@ p
             &:before
                 content counter(count) '.'
                 counter-increment count
+
+// Wrap text
+p
+    -ms-hyphens auto
+    -moz-hyphens auto
+    -webkit-hyphens auto
+    hyphens auto
 
 table
     border-spacing 0

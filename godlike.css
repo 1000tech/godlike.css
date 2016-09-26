@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
-ul,ol {
+ul,ol,menu {
   margin: 0;
   padding: 0;
   -moz-padding: 0;
@@ -111,50 +111,50 @@ ul,ol {
   list-style: none;
 }
 
+article a {
+  text-decoration: underline;
+}
+
+article img {
+  max-width: 100%;
+}
+
+article ul,article ol,article menu {
+  margin: 0 0 1em;
+}
+
+article ul ul,article ol ul,article menu ul,article ul ol,article ol ol,article menu ol,article ul menu,article ol menu,article menu menu {
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+article ul > li:before,article ol > li:before,article menu > li:before {
+  padding-right: 0.5em;
+}
+
+article ul > li:before,article menu > li:before {
+  content: '•';
+  font-family: Tahoma;
+}
+
+article ul > li li:before,article menu > li li:before {
+  content: '○';
+}
+
+article ol {
+  counter-reset: count;
+}
+
+article ol > li:before {
+  content: counter(count) '.';
+  counter-increment: count;
+}
+
 p {
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
-}
-
-p a {
-  text-decoration: underline;
-}
-
-p img {
-  max-width: 100%;
-}
-
-p ul,p ol {
-  margin: 0 0 1em;
-}
-
-p ul ul,p ol ul,p ul ol,p ol ol {
-  margin: 0;
-  padding: 0 0 0 1em;
-}
-
-p ul > li:before,p ol > li:before {
-  padding-right: 0.5em;
-}
-
-p ul > li:before {
-  content: '•';
-  font-family: Tahoma;
-}
-
-p ul > li li:before {
-  content: '○';
-}
-
-p ol {
-  counter-reset: count;
-}
-
-p ol > li:before {
-  content: counter(count) '.';
-  counter-increment: count;
 }
 
 table {
