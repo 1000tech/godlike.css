@@ -46,13 +46,24 @@ a,img,input,button,textarea,optgroup,select {
   padding: 0;
 }
 
+a,button,[type='button'],[type='submit'] {
+  transition: color 0.2s, background 0.2s, opacity 0.2s;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
 }
 
-a,button,[type="button"],[type="submit"] {
-  transition: color 0.2s, background 0.2s, opacity 0.2s;
+p {
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 b,strong {
@@ -64,7 +75,7 @@ img {
   vertical-align: middle;
 }
 
-button,label,select,[type="button"],[type='submit'],[type="reset"],[type='checkbox'],[type='radio'] {
+button,label,select,[type='button'],[type='submit'],[type='reset'],[type='checkbox'],[type='radio'] {
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -111,10 +122,6 @@ ul,ol,menu {
   list-style: none;
 }
 
-article a {
-  text-decoration: underline;
-}
-
 article img {
   max-width: 100%;
 }
@@ -148,13 +155,6 @@ article ol {
 article ol > li:before {
   content: counter(count) '.';
   counter-increment: count;
-}
-
-p {
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
 }
 
 table {
