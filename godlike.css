@@ -21,8 +21,9 @@ body {
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -172,5 +173,13 @@ td,th {
 }
 
 @-ms-viewport {
-  width: device-width;
+  width: device-width;initial-scale: 1;
+}
+
+@-moz-viewport {
+  width: device-width;initial-scale: 1;
+}
+
+@-webkit-viewport {
+  width: device-width;initial-scale: 1;
 }

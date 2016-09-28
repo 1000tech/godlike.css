@@ -61,4 +61,4 @@ PostCSS and [postcss-import](https://github.com/postcss/postcss-import):
 ```
 
 ## Demo
-Used on [MobiDevices](http://mobidevices.ru)
+Used on [MobiDevices](https://mobidevices.ru)

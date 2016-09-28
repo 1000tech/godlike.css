@@ -24,8 +24,9 @@ body
     -moz-osx-font-smoothing grayscale
 
     // Fix text zoom on Mobile Devices
-    -webkit-text-size-adjust 100%
     -ms-text-size-adjust 100%
+    -moz-text-size-adjust 100%
+    -webkit-text-size-adjust 100%
 
     // Fix tap color
     -webkit-tap-highlight-color rgba(0, 0, 0, 0)
@@ -163,6 +164,15 @@ td, th
 :-moz-placeholder, ::-moz-placeholder
     opacity 1
 
-// Fix viewport in IE 10 Mobile
+// Fix adaptive in mobile browsers
 @-ms-viewport
     width device-width
+    initial-scale 1
+
+@-moz-viewport
+    width device-width
+    initial-scale 1
+
+@-webkit-viewport
+    width device-width
+    initial-scale 1
