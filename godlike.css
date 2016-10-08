@@ -123,8 +123,11 @@ ul,ol,menu {
   list-style: none;
 }
 
-article img {
+article img,article embed,article object,article video,article iframe {
+  display: block;
+  margin: auto;
   max-width: 100%;
+  height: auto;
 }
 
 article ul,article ol,article menu {

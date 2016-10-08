@@ -141,10 +141,14 @@ ul, ol, menu {
     list-style: none;
 }
 
-// Valid stylization in text
 article {
-    img {
+
+    // Fix align and sizes graphical elements
+    img, embed, object, video, iframe {
+        display: block;
+        margin: auto;
         max-width: 100%;
+        height: auto;
     }
 
     // Add margins
