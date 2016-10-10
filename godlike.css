@@ -76,6 +76,10 @@ img {
   vertical-align: middle;
 }
 
+figure {
+  margin: 0;
+}
+
 button,label,select,[type='button'],[type='submit'],[type='reset'],[type='checkbox'],[type='radio'] {
   -ms-user-select: none;
   -moz-user-select: none;
