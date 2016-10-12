@@ -26,7 +26,7 @@ gulp.task('cssmin', function() {
 		}))
 		.pipe(cmq())
 		.pipe(csso())
-		.pipe(gulp.dest('./godlike.min'))
+		.pipe(gulp.dest('./'))
 });
 
 // Watcher
