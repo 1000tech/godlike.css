@@ -6,6 +6,7 @@ var
    csso = require('gulp-csso'),
    cmq = require('gulp-combine-mq'),
    autoprefixer = require('gulp-autoprefixer'),
+	rename = require("gulp-rename"),
 	nib = require('nib');
 
 // Compiling Stylus in CSS
@@ -26,6 +27,7 @@ gulp.task('cssmin', function() {
 		}))
 		.pipe(cmq())
 		.pipe(csso())
+		.pipe(rename('godlike.min.css'))
 		.pipe(gulp.dest('./'))
 });
 
