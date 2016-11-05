@@ -60,6 +60,9 @@ a
     cursor pointer
     text-decoration none
 
+    // Remove gaps in links underline in iOS 8+ and Safari 8+
+    -webkit-text-decoration-skip none
+
 // Wrap text
 p
     -ms-hyphens auto
@@ -144,6 +147,8 @@ article
         > li
             &:before
                 padding-right .5em
+            p
+                display inline
 
     // Fix align marker
     ul, menu

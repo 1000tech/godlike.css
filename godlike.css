@@ -54,6 +54,7 @@ a,button,[type='button'],[type='submit'] {
 a {
   cursor: pointer;
   text-decoration: none;
+  -webkit-text-decoration-skip: none;
 }
 
 p {
@@ -149,6 +150,10 @@ article ul ul,article ol ul,article menu ul,article ul ol,article ol ol,article 
 
 article ul > li:before,article ol > li:before,article menu > li:before {
   padding-right: 0.5em;
+}
+
+article ul > li p,article ol > li p,article menu > li p {
+  display: inline;
 }
 
 article ul > li:before,article menu > li:before {
