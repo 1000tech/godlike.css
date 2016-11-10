@@ -87,9 +87,10 @@ b, strong {
     font-weight: 700;
 }
 
-img {
+img, embed, object, video, iframe {
     border: 0;
     vertical-align: middle;
+    max-width: 100%;
 }
 
 figure {
@@ -157,10 +158,9 @@ ul, ol, menu {
 article {
 
     // Fix align and sizes graphical elements
-    img, embed, object, video, iframe {
+    img {
         display: block;
         margin: auto;
-        max-width: 100%;
         height: auto;
     }
 
