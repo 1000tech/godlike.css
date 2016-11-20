@@ -64,6 +64,10 @@ p {
   hyphens: auto;
 }
 
+p a {
+  text-decoration: underline;
+}
+
 b,strong {
   font-weight: 700;
 }
@@ -127,10 +131,6 @@ ul,ol,menu {
   -moz-padding: 0;
   -webkit-padding: 0;
   list-style: none;
-}
-
-article a {
-  text-decoration: underline;
 }
 
 article img,article embed,article object,article video,article iframe {

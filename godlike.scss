@@ -77,6 +77,11 @@ p {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    // Add text decoration
+    a {
+        text-decoration: underline;
+    }
 }
 
 // Fix font-weight
