@@ -69,8 +69,6 @@ p
     -moz-hyphens auto
     -webkit-hyphens auto
     hyphens auto
-    a
-        text-decoration underline
 
 // Fix font-weight
 b, strong
@@ -93,7 +91,7 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     cursor pointer
 
 input, button
-    &[disabled]
+    &:disabled
         pointer-events none
 
     // Remove padding in FF
@@ -132,7 +130,11 @@ ul, ol, menu
 
 article
 
-    // FFix align and sizes graphical elements
+    // Add text decoration
+    a
+        text-decoration underline
+
+    // Fix align and sizes graphical elements
     img, embed, object, video, iframe
         display block
         margin auto

@@ -64,10 +64,6 @@ p {
   hyphens: auto;
 }
 
-p a {
-  text-decoration: underline;
-}
-
 b,strong {
   font-weight: 700;
 }
@@ -90,7 +86,7 @@ button,label,select,[type='button'],[type='submit'],[type='reset'],[type='checkb
   cursor: pointer;
 }
 
-input[disabled],button[disabled] {
+input:disabled,button:disabled {
   pointer-events: none;
 }
 
@@ -131,6 +127,10 @@ ul,ol,menu {
   -moz-padding: 0;
   -webkit-padding: 0;
   list-style: none;
+}
+
+article a {
+  text-decoration: underline;
 }
 
 article img,article embed,article object,article video,article iframe {

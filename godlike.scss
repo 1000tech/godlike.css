@@ -77,9 +77,6 @@ p {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
-    a {
-        text-decoration: underline;
-    }
 }
 
 // Fix font-weight
@@ -107,7 +104,7 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
 }
 
 input, button {
-    &[disabled] {
+    &:disabled {
         pointer-events: none;
     }
 
@@ -157,8 +154,13 @@ ul, ol, menu {
 
 article {
 
+    // Add text decoration
+    a {
+        text-decoration: underline;
+    }
+
     // Fix align and sizes graphical elements
-    img {
+    img, embed, object, video, iframe {
         display: block;
         margin: auto;
         height: auto;
