@@ -4,7 +4,7 @@ A more modern alternative to reset.css and normalize.css
 
 <a href="https://github.com/1000tech/godlike.css">
 <img
-  src="http://akimg2.ask.fm/assets2/101/782/341/888/normal/a54ede2d3ed968ea.png" alt="godlike.css"
+  src="//1000.tech/img/pages/godlike.png" alt="godlike.css"
   width="120" height="120">
 </a>
 

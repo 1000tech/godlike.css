@@ -178,8 +178,13 @@ td, th
     padding 0
     text-align center
 
-// Fix placeholder color in FF
-:-moz-placeholder, ::-moz-placeholder
+// Remove the inner border and padding in Firefox
+::-moz-focus-outer, ::-moz-focus-inner
+    border 0
+    padding 0
+
+// Fix placeholder color in Firefox 19+ and Firefox 18-
+::-moz-placeholder, :-moz-placeholder
     opacity 1
 
 // Fix adaptive in mobile browsers
