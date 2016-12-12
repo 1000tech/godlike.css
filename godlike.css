@@ -125,7 +125,8 @@ input[type='search'],
 input::-webkit-search-cancel-button,
 input::-webkit-search-decoration,
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-inner-spin-button,
+input::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 input[type='number'] {
