@@ -1,10 +1,21 @@
 @charset "UTF-8"
 
+// Fix adaptive in mobile browsers
+@-ms-viewport
+    width device-width
+    initial-scale 1
+
+@-moz-viewport
+    width device-width
+    initial-scale 1
+
+@-webkit-viewport
+    width device-width
+    initial-scale 1
+
+// Fix default box-sizing
 *, :before, :after
     box-sizing border-box
-
-:active, :hover, :focus
-    outline 0
 
 html, body
     height 100%
@@ -38,7 +49,7 @@ body
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary
     display block
 
-a, img, input, button, textarea, optgroup, select
+a, img, input, button, textarea, optgroup, select, fieldset, figure, legend
     font inherit
     color inherit
     line-height inherit
@@ -78,13 +89,26 @@ p
 b, strong
     font-weight 700
 
-img, embed, object, video, iframe
+img, svg, embed, object, iframe, video, audio, canvas
     border 0
     vertical-align middle
     max-width 100%
+    height auto
 
-figure
-    margin 0
+input, select, button, button > *
+    vertical-align middle
+
+progress
+    vertical-align baseline
+
+svg
+
+    // Change the fill color to match the text color in all browsers
+    fill currentColor
+
+    // Hide the overflow in IE
+    &:not(:root)
+        overflow hidden
 
 // Remove user-select and add cursor pointer on button
 button, label, select, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio']
@@ -94,24 +118,11 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     user-select none
     cursor pointer
 
-input, button
-    &:disabled
-        pointer-events none
-
-    // Remove padding in FF
-    &::-moz-focus-inner
-        border 0
-        padding 0
-
 input
     &[type='search'], &::-webkit-search-cancel-button, &::-webkit-search-decoration, &::-webkit-outer-spin-button, &::-webkit-inner-spin-button, &::-webkit-slider-thumb
         -webkit-appearance none
     &[type='number']
         -moz-appearance textfield
-
-button
-    > *
-        vertical-align middle
 
 textarea
     overflow auto
@@ -125,6 +136,14 @@ h1, h2, h3, h4, h5, h6
     color inherit
     margin 0
 
+table
+    border-spacing 0
+    border-collapse collapse
+
+td, th
+    padding 0
+    text-align center
+
 ul, ol, menu
     margin 0
     padding 0
@@ -134,11 +153,14 @@ ul, ol, menu
 
 article
 
+    // Add text decoration
+    a
+        text-decoration underline
+
     // Fix align and sizes graphical elements
-    img, embed, object, video, iframe
+    img, embed, object, iframe, video
         display block
         margin auto
-        height auto
 
     // Add margins
     ul, ol, menu
@@ -170,15 +192,15 @@ article
                 content counter(count) '.'
                 counter-increment count
 
-table
-    border-spacing 0
-    border-collapse collapse
+// Remove outline on the forms and links
+:active, :hover, :focus
+    outline 0
 
-td, th
-    padding 0
-    text-align center
+// Remove click on the disabled state
+:disabled
+    pointer-events none
 
-// Remove the inner border and padding in Firefox
+// Remove border and padding in Firefox
 ::-moz-focus-outer, ::-moz-focus-inner
     border 0
     padding 0
@@ -186,16 +208,3 @@ td, th
 // Fix placeholder color in Firefox 19+ and Firefox 18-
 ::-moz-placeholder, :-moz-placeholder
     opacity 1
-
-// Fix adaptive in mobile browsers
-@-ms-viewport
-    width device-width
-    initial-scale 1
-
-@-moz-viewport
-    width device-width
-    initial-scale 1
-
-@-webkit-viewport
-    width device-width
-    initial-scale 1

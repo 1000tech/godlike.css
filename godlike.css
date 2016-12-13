@@ -1,13 +1,20 @@
 @charset "UTF-8";
+@-ms-viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+@-moz-viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+@-webkit-viewport {
+  width: device-width;
+  initial-scale: 1;
+}
 *,
 :before,
 :after {
   box-sizing: border-box;
-}
-:active,
-:hover,
-:focus {
-  outline: 0;
 }
 html,
 body {
@@ -49,7 +56,10 @@ input,
 button,
 textarea,
 optgroup,
-select {
+select,
+fieldset,
+figure,
+legend {
   font: inherit;
   color: inherit;
   line-height: inherit;
@@ -87,16 +97,32 @@ strong {
   font-weight: 700;
 }
 img,
+svg,
 embed,
 object,
+iframe,
 video,
-iframe {
+audio,
+canvas {
   border: 0;
   vertical-align: middle;
   max-width: 100%;
+  height: auto;
 }
-figure {
-  margin: 0;
+input,
+select,
+button,
+button > * {
+  vertical-align: middle;
+}
+progress {
+  vertical-align: baseline;
+}
+svg {
+  fill: currentColor;
+}
+svg:not(:root) {
+  overflow: hidden;
 }
 button,
 label,
@@ -112,15 +138,6 @@ select,
   user-select: none;
   cursor: pointer;
 }
-input:disabled,
-button:disabled {
-  pointer-events: none;
-}
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
 input[type='search'],
 input::-webkit-search-cancel-button,
 input::-webkit-search-decoration,
@@ -131,9 +148,6 @@ input::-webkit-slider-thumb {
 }
 input[type='number'] {
   -moz-appearance: textfield;
-}
-button > * {
-  vertical-align: middle;
 }
 textarea {
   overflow: auto;
@@ -152,6 +166,15 @@ h6 {
   color: inherit;
   margin: 0;
 }
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0;
+  text-align: center;
+}
 ul,
 ol,
 menu {
@@ -161,14 +184,16 @@ menu {
   -webkit-padding: 0;
   list-style: none;
 }
+article a {
+  text-decoration: underline;
+}
 article img,
 article embed,
 article object,
-article video,
-article iframe {
+article iframe,
+article video {
   display: block;
   margin: auto;
-  height: auto;
 }
 article ul,
 article ol,
@@ -213,14 +238,13 @@ article ol > li:before {
   content: counter(count) '.';
   counter-increment: count;
 }
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
+:active,
+:hover,
+:focus {
+  outline: 0;
 }
-td,
-th {
-  padding: 0;
-  text-align: center;
+:disabled {
+  pointer-events: none;
 }
 ::-moz-focus-outer,
 ::-moz-focus-inner {
@@ -230,16 +254,4 @@ th {
 ::-moz-placeholder,
 :-moz-placeholder {
   opacity: 1;
-}
-@-ms-viewport {
-  width: device-width;
-  initial-scale: 1;
-}
-@-moz-viewport {
-  width: device-width;
-  initial-scale: 1;
-}
-@-webkit-viewport {
-  width: device-width;
-  initial-scale: 1;
 }

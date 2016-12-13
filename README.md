@@ -18,19 +18,31 @@ A more modern alternative to reset.css and normalize.css
 
 ## Install
 
-##### Bower:
-
-    $ bower i godlike.css
-
 ##### NPM:
 
     $ npm i godlike.css
+
+##### Bower:
+
+    $ bower i godlike.css
+    
+##### CDN:
+
+ https://cdnjs.com/libraries/godlike.css
     
 ##### Download:
 
- https://github.com/1000tech/godlike.css/blob/master/godlike.css
+ https://raw.githubusercontent.com/1000tech/godlike.css/master/godlike.css
 
 ## Usage
+
+### NPM
+
+PostCSS and [postcss-import](https://github.com/postcss/postcss-import):
+
+```css
+@import 'godlike.css/godlike.min.css';
+```
 
 ### Bower
 
@@ -50,14 +62,6 @@ A more modern alternative to reset.css and normalize.css
 
 ```css
 @import '../bower_components/godlike.css/godlike';
-```
-
-### NPM
-
-PostCSS and [postcss-import](https://github.com/postcss/postcss-import):
-
-```css
-@import 'godlike.css/godlike.min.css';
 ```
 
 ## Demo
