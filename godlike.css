@@ -89,9 +89,6 @@ p {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
-p a {
-  text-decoration: underline;
-}
 b,
 strong {
   font-weight: 700;
@@ -131,22 +128,24 @@ select,
 [type='submit'],
 [type='reset'],
 [type='checkbox'],
-[type='radio'] {
+[type='radio'],
+[type='range'] {
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
 }
-input[type='search'],
-input::-webkit-search-cancel-button,
-input::-webkit-search-decoration,
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button,
-input::-webkit-slider-thumb {
+[type='search'],
+[type='range'],
+::-webkit-search-cancel-button,
+::-webkit-search-decoration,
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button,
+::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
-input[type='number'] {
+[type='number'] {
   -moz-appearance: textfield;
 }
 textarea {
@@ -186,6 +185,9 @@ menu {
 }
 article a {
   text-decoration: underline;
+}
+article a:hover {
+  text-decoration: none;
 }
 article img,
 article embed,
