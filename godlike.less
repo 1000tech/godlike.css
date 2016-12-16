@@ -90,11 +90,6 @@ p {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
-
-    // Add text decoration
-    a {
-        text-decoration: underline;
-    }
 }
 
 // Fix font-weight
@@ -129,7 +124,7 @@ svg {
 }
 
 // Remove user-select and add cursor pointer on button
-button, label, select, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio'] {
+button, label, select, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio'], [type='range'] {
     -ms-user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -137,13 +132,12 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     cursor: pointer;
 }
 
-input {
-    &[type='search'], &::-webkit-search-cancel-button, &::-webkit-search-decoration, &::-webkit-outer-spin-button, &::-webkit-inner-spin-button, &::-webkit-slider-thumb {
-        -webkit-appearance: none;
-    }
-    &[type='number'] {
-        -moz-appearance: textfield;
-    }
+[type='search'], [type='range'], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+[type='number'] {
+    -moz-appearance: textfield;
 }
 
 textarea {
@@ -181,8 +175,11 @@ ul, ol, menu {
 article {
 
     // Add text decoration
-    a {
+    a  {
         text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     // Fix align and sizes graphical elements

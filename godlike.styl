@@ -81,10 +81,6 @@ p
     -webkit-hyphens auto
     hyphens auto
 
-    // Add text decoration
-    a
-        text-decoration underline
-
 // Fix font-weight
 b, strong
     font-weight 700
@@ -111,18 +107,18 @@ svg
         overflow hidden
 
 // Remove user-select and add cursor pointer on button
-button, label, select, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio']
+button, label, select, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio'], [type='range']
     -ms-user-select none
     -moz-user-select none
     -webkit-user-select none
     user-select none
     cursor pointer
 
-input
-    &[type='search'], &::-webkit-search-cancel-button, &::-webkit-search-decoration, &::-webkit-outer-spin-button, &::-webkit-inner-spin-button, &::-webkit-slider-thumb
-        -webkit-appearance none
-    &[type='number']
-        -moz-appearance textfield
+[type='search'], [type='range'], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb
+    -webkit-appearance none
+
+[type='number']
+    -moz-appearance textfield
 
 textarea
     overflow auto
@@ -156,6 +152,8 @@ article
     // Add text decoration
     a
         text-decoration underline
+        &:hover
+            text-decoration none
 
     // Fix align and sizes graphical elements
     img, embed, object, iframe, video
