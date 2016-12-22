@@ -52,7 +52,8 @@ body {
     touch-action: manipulation;
 }
 
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+// Add the correct display HTML5-tags in IE 9-
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary, details {
     display: block;
 }
 
@@ -104,6 +105,11 @@ img, svg, embed, object, iframe, video, audio, canvas {
     height: auto;
 }
 
+// Add the correct display in IE 9-
+video, audio, canvas {
+    display: inline-block;
+}
+
 input, select, button, button > * {
     vertical-align: middle;
 }
@@ -132,12 +138,18 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     cursor: pointer;
 }
 
+// Fix appearance in Chrome and Safari
 [type='search'], [type='range'], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
 [type='number'] {
     -moz-appearance: textfield;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
 }
 
 textarea {
@@ -173,14 +185,6 @@ ul, ol, menu {
 }
 
 article {
-
-    // Add text decoration
-    a  {
-        text-decoration: underline;
-        &:hover {
-            text-decoration: none;
-        }
-    }
 
     // Fix align and sizes graphical elements
     img, embed, object, iframe, video {
