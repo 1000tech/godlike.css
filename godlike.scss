@@ -21,18 +21,20 @@
     box-sizing: border-box;
 }
 
+// Remove default margins, fix height
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+// Fix height and scrollbars
 body {
     min-height: 100%;
     overflow: auto;
     overflow-x: hidden;
 
-    // Wrap text
+    // Fix hyphenation
     word-wrap: break-word;
 
     // Fix rendering fonts
@@ -57,6 +59,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: block;
 }
 
+// Remove default styles
 a, img, input, button, textarea, optgroup, select, fieldset, figure, legend {
     font: inherit;
     color: inherit;
@@ -85,7 +88,7 @@ a {
     -webkit-text-decoration-skip: none;
 }
 
-// Wrap text
+// Remove default margins, add hyphenation
 p {
     margin: 0;
     -ms-hyphens: auto;
@@ -99,6 +102,7 @@ b, strong {
     font-weight: 700;
 }
 
+// Fix the correct display graphical elements
 img, svg, embed, object, iframe, video, audio, canvas {
     border: 0;
     vertical-align: middle;
@@ -111,23 +115,43 @@ video, audio, canvas {
     display: inline-block;
 }
 
-input, select, button, button > * {
-    vertical-align: middle;
-}
-
+// Fix default alignment
 progress {
     vertical-align: baseline;
 }
 
+// Change the fill color to match the text color in all browsers
 svg {
-
-    // Change the fill color to match the text color in all browsers
     fill: currentColor;
 
     // Hide the overflow in IE
     &:not(:root) {
         overflow: hidden;
     }
+}
+
+// Add valid default styles
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin: 0;
+}
+
+// Remove default margins
+ul, ol, menu {
+    margin: 0;
+    padding: 0;
+    -moz-padding: 0;
+    -webkit-padding: 0;
+    list-style: none;
+}
+
+// Fix default alignment
+input, select, button, button > * {
+    vertical-align: middle;
 }
 
 // Remove user-select and add cursor pointer on button
@@ -144,13 +168,14 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     -webkit-appearance: none;
 }
 
-[type='number'] {
-    -moz-appearance: textfield;
-}
-
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
+}
+
+// Fix appearance in Firefox
+[type='number'] {
+    -moz-appearance: textfield;
 }
 
 // Remove style clean text field
@@ -158,47 +183,57 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     display: none;
 }
 
+// Add valid default width
 input, textarea {
     width: 100%;
 }
 
+// Add scrollbars, remove resize
 textarea {
     overflow: auto;
     resize: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-rendering: optimizeLegibility;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit;
-    margin: 0;
+// Remove outline on the forms and links
+:active, :hover, :focus {
+    outline: 0;
 }
 
+// Remove click on the disabled state
+:disabled {
+    pointer-events: none;
+}
+
+// Remove border and padding in Firefox
+::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+// Fix placeholder color in Firefox 19+ and Firefox 18-
+::-moz-placeholder, :-moz-placeholder {
+    opacity: 1;
+}
+
+// Remove default spacing
 table {
     border-spacing: 0;
     border-collapse: collapse;
 }
 
+// Remove default padding
 td, th {
     padding: 0;
     text-align: center;
 }
 
-ul, ol, menu {
-    margin: 0;
-    padding: 0;
-    -moz-padding: 0;
-    -webkit-padding: 0;
-    list-style: none;
-}
-
+// Fix display elements in article
 article {
 
     // Add margins
     p:not(:empty) {
-        margin: .7em 0;
+        margin-top: .7em;
+        margin-bottom: .7em;
     }
 
     // Fix align graphical elements
@@ -209,10 +244,11 @@ article {
 
     // Add margins
     ul, ol, menu {
-        margin: .7em 0;
+        margin-top: .7em;
+        margin-bottom: .7em;
         ul, ol, menu {
             margin: 0;
-            padding: 0 0 0 1em;
+            padding-left: 1em;
         }
         > li {
             &:before {
@@ -249,25 +285,4 @@ article {
             }
         }
     }
-}
-
-// Remove outline on the forms and links
-:active, :hover, :focus {
-    outline: 0;
-}
-
-// Remove click on the disabled state
-:disabled {
-    pointer-events: none;
-}
-
-// Remove border and padding in Firefox
-::-moz-focus-outer, ::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-// Fix placeholder color in Firefox 19+ and Firefox 18-
-::-moz-placeholder, :-moz-placeholder {
-    opacity: 1;
 }

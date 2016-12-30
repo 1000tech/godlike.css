@@ -112,12 +112,6 @@ audio,
 canvas {
   display: inline-block;
 }
-input,
-select,
-button,
-button > * {
-  vertical-align: middle;
-}
 progress {
   vertical-align: baseline;
 }
@@ -126,6 +120,34 @@ svg {
 }
 svg:not(:root) {
   overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizeLegibility;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin: 0;
+}
+ul,
+ol,
+menu {
+  margin: 0;
+  padding: 0;
+  -moz-padding: 0;
+  -webkit-padding: 0;
+  list-style: none;
+}
+input,
+select,
+button,
+button > * {
+  vertical-align: middle;
 }
 button,
 label,
@@ -151,11 +173,11 @@ select,
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
-[type='number'] {
-  -moz-appearance: textfield;
-}
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+}
+[type='number'] {
+  -moz-appearance: textfield;
 }
 ::-ms-clear {
   display: none;
@@ -168,18 +190,22 @@ textarea {
   overflow: auto;
   resize: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-rendering: optimizeLegibility;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-  margin: 0;
+:active,
+:hover,
+:focus {
+  outline: 0;
+}
+:disabled {
+  pointer-events: none;
+}
+::-moz-focus-outer,
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+::-moz-placeholder,
+:-moz-placeholder {
+  opacity: 1;
 }
 table {
   border-spacing: 0;
@@ -190,17 +216,9 @@ th {
   padding: 0;
   text-align: center;
 }
-ul,
-ol,
-menu {
-  margin: 0;
-  padding: 0;
-  -moz-padding: 0;
-  -webkit-padding: 0;
-  list-style: none;
-}
 article p:not(:empty) {
-  margin: 0.7em 0;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
 }
 article img,
 article embed,
@@ -213,7 +231,8 @@ article video {
 article ul,
 article ol,
 article menu {
-  margin: 0.7em 0;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
 }
 article ul ul,
 article ol ul,
@@ -225,7 +244,7 @@ article ul menu,
 article ol menu,
 article menu menu {
   margin: 0;
-  padding: 0 0 0 1em;
+  padding-left: 1em;
 }
 article ul > li:before,
 article ol > li:before,
@@ -252,21 +271,4 @@ article ol {
 article ol > li:before {
   content: counter(count) '.';
   counter-increment: count;
-}
-:active,
-:hover,
-:focus {
-  outline: 0;
-}
-:disabled {
-  pointer-events: none;
-}
-::-moz-focus-outer,
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-::-moz-placeholder,
-:-moz-placeholder {
-  opacity: 1;
 }
