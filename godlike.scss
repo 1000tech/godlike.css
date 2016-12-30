@@ -87,6 +87,7 @@ a {
 
 // Wrap text
 p {
+    margin: 0;
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
@@ -152,6 +153,15 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     font: inherit;
 }
 
+// Remove style clean text field
+::-ms-clear {
+    display: none;
+}
+
+input, textarea {
+    width: 100%;
+}
+
 textarea {
     overflow: auto;
     resize: none;
@@ -186,7 +196,12 @@ ul, ol, menu {
 
 article {
 
-    // Fix align and sizes graphical elements
+    // Add margins
+    p:not(:empty) {
+        margin: .7em 0;
+    }
+
+    // Fix align graphical elements
     img, embed, object, iframe, video {
         display: block;
         margin: auto;
@@ -194,7 +209,7 @@ article {
 
     // Add margins
     ul, ol, menu {
-        margin: 0 0 1em;
+        margin: .7em 0;
         ul, ol, menu {
             margin: 0;
             padding: 0 0 0 1em;

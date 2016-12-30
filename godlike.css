@@ -84,6 +84,7 @@ a {
   -webkit-text-decoration-skip: none;
 }
 p {
+  margin: 0;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
@@ -156,6 +157,13 @@ select,
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
 }
+::-ms-clear {
+  display: none;
+}
+input,
+textarea {
+  width: 100%;
+}
 textarea {
   overflow: auto;
   resize: none;
@@ -191,6 +199,9 @@ menu {
   -webkit-padding: 0;
   list-style: none;
 }
+article p:not(:empty) {
+  margin: 0.7em 0;
+}
 article img,
 article embed,
 article object,
@@ -202,7 +213,7 @@ article video {
 article ul,
 article ol,
 article menu {
-  margin: 0 0 1em;
+  margin: 0.7em 0;
 }
 article ul ul,
 article ol ul,
