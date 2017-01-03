@@ -14,6 +14,8 @@
 *,
 :before,
 :after {
+  -moz-box-sizing: border-box /* Firefox > 2.0 */;
+  -webkit-box-sizing: border-box /* Safari > 3.2, Chrome > 4.0 */;
   box-sizing: border-box;
 }
 html,
@@ -175,6 +177,13 @@ select,
 }
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  font: inherit;
+}
+::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
 }
 [type='number'] {
   -moz-appearance: textfield;
@@ -194,6 +203,7 @@ textarea {
 :hover,
 :focus {
   outline: 0;
+  outline-offset: 0;
 }
 :disabled {
   pointer-events: none;
