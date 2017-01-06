@@ -62,7 +62,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 
 // Remove default styles
-a, img, input, button, textarea, optgroup, select, fieldset, figure, legend {
+a, input, button, textarea, optgroup, select, fieldset, figure, legend {
     font: inherit;
     color: inherit;
     line-height: inherit;
@@ -78,7 +78,7 @@ a, img, input, button, textarea, optgroup, select, fieldset, figure, legend {
 
 // Add default animation
 a, button, [type='button'], [type='submit'] {
-    transition: color .2s, background .2s, opacity .2s;
+    transition: color .25s, background .25s, opacity .25s;
 }
 
 // Remove default text-decoration, fix cursor
@@ -88,6 +88,13 @@ a {
 
     // Remove gaps in links underline in iOS 8+ and Safari 8+
     -webkit-text-decoration-skip: none;
+}
+
+// Fix button bugs
+button {
+    overflow: visible;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
 }
 
 // Remove default margins, add hyphenation
@@ -106,10 +113,10 @@ b, strong {
 
 // Fix the correct display graphical elements
 img, svg, embed, object, iframe, video, audio, canvas {
-    border: 0;
     vertical-align: middle;
     max-width: 100%;
     height: auto;
+    border: 0;
 }
 
 // Add the correct display in IE 9-
@@ -135,9 +142,7 @@ svg {
 // Add valid default styles
 h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
+    font: inherit;
     color: inherit;
     margin: 0;
 }
@@ -187,8 +192,8 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     -moz-appearance: textfield;
 }
 
-// Remove style clean text field
-::-ms-clear {
+// Remove clean cross in IE 10
+::-ms-clear, ::-ms-reveal {
     display: none;
 }
 
