@@ -113,6 +113,9 @@ canvas {
   max-width: 100%;
   height: auto;
 }
+img {
+  image-rendering: optimizeQuality;
+}
 video,
 audio,
 canvas {

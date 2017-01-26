@@ -119,6 +119,11 @@ img, svg, embed, object, iframe, video, audio, canvas {
     border: 0;
 }
 
+// Fix Firefox transform scale image bug
+img {
+    image-rendering: optimizeQuality;
+}
+
 // Add the correct display in IE 9-
 video, audio, canvas {
     display: inline-block;
