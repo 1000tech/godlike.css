@@ -15,8 +15,6 @@
 
 // Fix default box-sizing
 *, :before, :after
-    -moz-box-sizing border-box /* Firefox > 2.0 */
-    -webkit-box-sizing border-box /* Safari > 3.2, Chrome > 4.0 */
     box-sizing border-box
 
 // Remove default margins, fix height
@@ -51,7 +49,7 @@ body
     touch-action manipulation
 
 // Add the correct display HTML5-tags in IE 9-
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary, details
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary
     display block
 
 // Remove default styles
@@ -146,9 +144,6 @@ input, select, button, button > *
 
 // Remove user-select and add cursor pointer on button
 button, label, select, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio'], [type='range']
-    -ms-user-select none
-    -moz-user-select none
-    -webkit-user-select none
     user-select none
     cursor pointer
 
@@ -197,8 +192,8 @@ textarea
     border 0
     padding 0
 
-// Fix placeholder color in Firefox 19+ and Firefox 18-
-::-moz-placeholder, :-moz-placeholder
+// Fix placeholder color in Firefox 19+
+::placeholder, ::-moz-placeholder
     opacity 1
 
 // Remove default spacing

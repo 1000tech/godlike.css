@@ -14,8 +14,6 @@
 *,
 :before,
 :after {
-  -moz-box-sizing: border-box /* Firefox > 2.0 */;
-  -webkit-box-sizing: border-box /* Safari > 3.2, Chrome > 4.0 */;
   box-sizing: border-box;
 }
 html,
@@ -165,9 +163,6 @@ select,
 [type='checkbox'],
 [type='radio'],
 [type='range'] {
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
 }
@@ -219,8 +214,8 @@ textarea {
   border: 0;
   padding: 0;
 }
-::-moz-placeholder,
-:-moz-placeholder {
+::placeholder,
+::-moz-placeholder {
   opacity: 1;
 }
 table {
