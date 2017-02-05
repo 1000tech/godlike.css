@@ -59,6 +59,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: block;
 }
 
+// Fix span display
+span {
+    display: inline-block;
+}
+
 // Remove default styles
 a, input, button, textarea, optgroup, select, fieldset, figure, legend {
     font: inherit;
@@ -161,6 +166,7 @@ ul, ol, menu {
 
 // Fix default alignment
 input, select, button, button > * {
+    display: inline-block;
     vertical-align: middle;
 }
 
