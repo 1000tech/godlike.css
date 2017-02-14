@@ -61,7 +61,8 @@ optgroup,
 select,
 fieldset,
 figure,
-legend {
+legend,
+address {
   font: inherit;
   color: inherit;
   line-height: inherit;
@@ -154,7 +155,8 @@ menu {
 input,
 select,
 button,
-button > * {
+button > *,
+a > * {
   display: inline-block;
   vertical-align: middle;
 }
@@ -172,7 +174,7 @@ select,
 }
 [type='search'],
 [type='range'],
-::-webkit-search-cancel-button,
+[type="radio"] ::-webkit-search-cancel-button,
 ::-webkit-search-decoration,
 ::-webkit-outer-spin-button,
 ::-webkit-inner-spin-button,
@@ -188,6 +190,9 @@ select,
   pointer-events: none;
   position: absolute;
   right: 0;
+}
+[type="radio"] {
+  -webkit-appearance: radio;
 }
 [type='number'] {
   -moz-appearance: textfield;

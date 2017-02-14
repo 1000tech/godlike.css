@@ -65,7 +65,7 @@ span {
 }
 
 // Remove default styles
-a, input, button, textarea, optgroup, select, fieldset, figure, legend {
+a, input, button, textarea, optgroup, select, fieldset, figure, legend, address {
     font: inherit;
     color: inherit;
     line-height: inherit;
@@ -165,7 +165,7 @@ ul, ol, menu {
 }
 
 // Fix default alignment
-input, select, button, button > * {
+input, select, button, button > *, a > * {
     display: inline-block;
     vertical-align: middle;
 }
@@ -177,7 +177,7 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
 }
 
 // Fix appearance in Chrome and Safari
-[type='search'], [type='range'], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
+[type='search'], [type='range'], [type="radio"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
@@ -191,6 +191,11 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     pointer-events: none;
     position: absolute;
     right: 0;
+}
+
+// Fix appearance in Mobile Safari
+[type="radio"] {
+    -webkit-appearance: radio;
 }
 
 // Fix appearance in Firefox
