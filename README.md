@@ -19,12 +19,14 @@ A more modern alternative to reset.css and normalize.css
 ## Install
 
 ##### NPM:
-
-    $ npm i godlike.css
+```smartyconfig
+$ npm i godlike.css --save
+```
 
 ##### Bower:
-
-    $ bower i godlike.css
+```smartyconfig
+$ bower i godlike.css --save
+```
     
 ##### CDN:
 
