@@ -110,10 +110,10 @@ iframe,
 video,
 audio,
 canvas {
-  border: 0;
   vertical-align: middle;
   max-width: 100%;
   height: auto;
+  border: 0;
 }
 img {
   image-rendering: optimizeQuality;
@@ -174,7 +174,8 @@ select,
 }
 [type='search'],
 [type='range'],
-[type="radio"] ::-webkit-search-cancel-button,
+[type="radio"],
+::-webkit-search-cancel-button,
 ::-webkit-search-decoration,
 ::-webkit-outer-spin-button,
 ::-webkit-inner-spin-button,
@@ -190,6 +191,9 @@ select,
   pointer-events: none;
   position: absolute;
   right: 0;
+}
+:-webkit-autofill {
+  box-shadow: inset 0 0 0 1000px #fff;
 }
 [type="radio"] {
   -webkit-appearance: radio;

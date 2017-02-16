@@ -1,260 +1,319 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 // Fix adaptive in mobile browsers
-@-ms-viewport
-    width device-width
-    initial-scale 1
+@-ms-viewport {
+    width: device-width;
+    initial-scale: 1;
+}
 
-@-moz-viewport
-    width device-width
-    initial-scale 1
+@-moz-viewport {
+    width: device-width;
+    initial-scale: 1;
+}
 
-@-webkit-viewport
-    width device-width
-    initial-scale 1
+@-webkit-viewport {
+    width: device-width;
+    initial-scale: 1;
+}
 
 // Fix default box-sizing
-*, :before, :after
-    box-sizing border-box
+*, :before, :after {
+    box-sizing: border-box;
+}
 
 // Remove default margins, fix height
-html, body
-    height 100%
-    margin 0
-    padding 0
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 // Fix height and scrollbars
-body
-    min-height 100%
-    overflow auto
-    overflow-x hidden
+body {
+    min-height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
 
     // Fix hyphenation
-    word-wrap break-word
+    word-wrap: break-word;
 
     // Fix rendering fonts
-    -webkit-font-smoothing antialiased
-    -moz-osx-font-smoothing grayscale
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     // Fix text zoom on Mobile Devices
-    -ms-text-size-adjust 100%
-    -moz-text-size-adjust 100%
-    -webkit-text-size-adjust 100%
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 
     // Fix tap color
-    -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     // Remove 300ms delay on Mobile Devices
-    -ms-touch-action manipulation
-    touch-action manipulation
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
 
 // Add the correct display HTML5-tags in IE 9-
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary
-    display block
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
 
 // Fix span display
-span
-    display inline-block
+span {
+    display: inline-block;
+}
 
 // Remove default styles
-a, input, button, textarea, optgroup, select, fieldset, figure, legend, address
-    font inherit
-    color inherit
-    line-height inherit
-    text-transform inherit
-    text-shadow inherit
-    border none
-    background none
-    box-shadow none
-    border-radius 0
-    margin 0
-    padding 0
+a, input, button, textarea, optgroup, select, fieldset, figure, legend, address {
+    font: inherit;
+    color: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+    text-shadow: inherit;
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
 
 // Add default animation
-a, button, [type='button'], [type='submit']
-    transition color .25s, background .25s, opacity .25s
+a, button, [type='button'], [type='submit'] {
+    transition: color .25s, background .25s, opacity .25s;
+}
 
 // Remove default text-decoration, fix cursor
-a
-    cursor pointer
-    text-decoration none
+a {
+    cursor: pointer;
+    text-decoration: none;
 
-    // Remove gaps in links underline in iOS 8+ and Safari 8+
-    -webkit-text-decoration-skip none
+// Remove gaps in links underline in iOS 8+ and Safari 8+
+    -webkit-text-decoration-skip: none;
+}
 
 // Fix button bugs
-button
-    overflow visible
-    -webkit-font-smoothing inherit
-    letter-spacing inherit
+button {
+    overflow: visible;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+}
 
 // Remove default margins, add hyphenation
-p
-    margin 0
-    -ms-hyphens auto
-    -moz-hyphens auto
-    -webkit-hyphens auto
-    hyphens auto
+p {
+    margin: 0;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
 
 // Fix font-weight
-b, strong
-    font-weight 700
+b, strong {
+    font-weight: 700;
+}
 
 // Fix the correct display graphical elements
-img, svg, embed, object, iframe, video, audio, canvas
-    border 0
-    vertical-align middle
-    max-width 100%
-    height auto
+img, svg, embed, object, iframe, video, audio, canvas {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
 
 // Fix Firefox transform scale image bug
-img
-    image-rendering optimizeQuality
+img {
+    image-rendering: optimizeQuality;
+}
 
 // Add the correct display in IE 9-
-video, audio, canvas
-    display inline-block
+video, audio, canvas {
+    display: inline-block;
+}
 
 // Fix default alignment
-progress
-    vertical-align baseline
+progress {
+    vertical-align: baseline;
+}
 
 // Change the fill color to match the text color in all browsers
-svg
-    fill currentColor
+svg {
+    fill: currentColor;
 
     // Hide the overflow in IE
-    &:not(:root)
-        overflow hidden
+    &:not(:root) {
+        overflow: hidden;
+    }
+}
 
 // Add valid default styles
-h1, h2, h3, h4, h5, h6
-    text-rendering optimizeLegibility
-    font inherit
-    color inherit
-    margin 0
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    font: inherit;
+    color: inherit;
+    margin: 0;
+}
 
 // Remove default margins
-ul, ol, menu
-    margin 0
-    padding 0
-    -moz-padding 0
-    -webkit-padding 0
-    list-style none
+ul, ol, menu {
+    margin: 0;
+    padding: 0;
+    -moz-padding: 0;
+    -webkit-padding: 0;
+    list-style: none;
+}
 
 // Fix default alignment
-input, select, button, button > *, a > *
-    display inline-block
-    vertical-align middle
+input, select, button, button > *, a > * {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 // Remove user-select and add cursor pointer on button
-button, label, select, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio'], [type='range']
-    user-select none
-    cursor pointer
+button, label, select, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio'], [type='range'] {
+    user-select: none;
+    cursor: pointer;
+}
 
 // Fix appearance in Chrome and Safari
-[type='search'], [type='range'], [type="radio"] ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb
-    -webkit-appearance none
+[type='search'], [type='range'], [type="radio"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
 
-::-webkit-file-upload-button
-    -webkit-appearance button
-    font inherit
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
 
-::-webkit-contacts-auto-fill-button
-    visibility hidden
-    pointer-events none
-    position absolute
-    right 0
+::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+// Fix default autocomplete background color in Chrome
+:-webkit-autofill {
+    box-shadow: inset 0 0 0 1000px #fff;
+}
 
 // Fix appearance in Mobile Safari
-[type="radio"]
-    -webkit-appearance radio
+[type="radio"] {
+    -webkit-appearance: radio;
+}
 
 // Fix appearance in Firefox
-[type='number']
-    -moz-appearance textfield
+[type='number'] {
+    -moz-appearance: textfield;
+}
 
 // Remove clean cross in IE 10
-::-ms-clear, ::-ms-reveal
-    display none
+::-ms-clear, ::-ms-reveal {
+    display: none;
+}
 
 // Add valid default width
-input, textarea
-    width 100%
+input, textarea {
+    width: 100%;
+}
 
 // Add scrollbars, remove resize
-textarea
-    overflow auto
-    resize none
+textarea {
+    overflow: auto;
+    resize: none;
+}
 
 // Remove outline on the forms and links
-:active, :hover, :focus
-    outline 0
-    outline-offset 0
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 
 // Remove click on the disabled state
-:disabled
-    pointer-events none
+:disabled {
+    pointer-events: none;
+}
 
 // Remove border and padding in Firefox
-::-moz-focus-outer, ::-moz-focus-inner
-    border 0
-    padding 0
+::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
 
-// Fix placeholder color in Firefox 19+
-::placeholder, ::-moz-placeholder
-    opacity 1
+// Fix placeholder color in Firefox 19+ and Firefox 18-
+::placeholder, ::-moz-placeholder {
+    opacity: 1;
+}
 
 // Remove default spacing
-table
-    border-spacing 0
-    border-collapse collapse
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
 
 // Remove default padding
-td, th
-    padding 0
-    text-align center
+td, th {
+    padding: 0;
+    text-align: center;
+}
 
 // Fix display elements in article
-article
+article {
 
     // Add margins
-    p:not(:empty)
-        margin-top .7em
-        margin-bottom .7em
+    p:not(:empty) {
+        margin-top: .7em;
+        margin-bottom: .7em;
+    }
 
     // Fix align graphical elements
-    img, embed, object, iframe, video
-        display block
-        margin auto
+    img, embed, object, iframe, video {
+        display: block;
+        margin: auto;
+    }
 
     // Add margins
-    ul, ol, menu
-        margin-top .7em
-        margin-bottom .7em
-        ul, ol, menu
-            margin 0
-            padding-left 1em
-        > li
-            &:before
-                padding-right .5em
-            p
-                display inline
+    ul, ol, menu {
+        margin-top: .7em;
+        margin-bottom: .7em;
+        ul, ol, menu {
+            margin: 0;
+            padding-left: 1em;
+        }
+        > li {
+            &:before {
+                padding-right: .5em;
+            }
+            p {
+                display: inline;
+            }
+        }
+    }
 
     // Fix align marker
-    ul, menu
-        > li
-            &:before
-                content '•'
-                font-family Tahoma
-            li
-                &:before
-                    content '○'
+    ul, menu {
+        > li {
+            &:before {
+                content: '•';
+                font-family: Tahoma;
+            }
+            li {
+                &:before {
+                    content: '○';
+                }
+            }
+        }
+    }
 
     // Fix align counter
-    ol
-        counter-reset count
-        > li
-            &:before
-                content counter(count) '.'
-                counter-increment count
+    ol {
+        counter-reset: count;
+        > li {
+            &:before {
+                content: counter(count) '.';
+                counter-increment: count;
+            }
+        }
+    }
+}

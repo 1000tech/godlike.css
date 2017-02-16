@@ -193,6 +193,11 @@ button, label, select, [type='button'], [type='submit'], [type='reset'], [type='
     right: 0;
 }
 
+// Fix default autocomplete background color in Chrome
+:-webkit-autofill {
+    box-shadow: inset 0 0 0 1000px #fff;
+}
+
 // Fix appearance in Mobile Safari
 [type="radio"] {
     -webkit-appearance: radio;
