@@ -16,16 +16,16 @@
 :after {
   box-sizing: border-box;
 }
-html,
-body {
+html {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 body {
+  position: relative;
   min-height: 100%;
   overflow: auto;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -110,10 +110,10 @@ iframe,
 video,
 audio,
 canvas {
+  border: 0;
   vertical-align: middle;
   max-width: 100%;
   height: auto;
-  border: 0;
 }
 img {
   image-rendering: optimizeQuality;
@@ -174,8 +174,7 @@ select,
 }
 [type='search'],
 [type='range'],
-[type="radio"],
-::-webkit-search-cancel-button,
+[type="radio"] ::-webkit-search-cancel-button,
 ::-webkit-search-decoration,
 ::-webkit-outer-spin-button,
 ::-webkit-inner-spin-button,

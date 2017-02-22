@@ -21,18 +21,21 @@
     box-sizing: border-box;
 }
 
-// Remove default margins, fix height
-html, body {
+// Fix document height
+html {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 // Fix height and scrollbars
 body {
+    position: relative;
     min-height: 100%;
     overflow: auto;
     overflow-x: hidden;
+
+    // Remove default margins
+    margin: 0;
+    padding: 0;
 
     // Fix hyphenation
     word-wrap: break-word;
