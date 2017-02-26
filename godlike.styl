@@ -55,8 +55,11 @@ body
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary
     display block
 
-// Fix span display
-span
+video, audio, canvas
+    display inline-block
+
+// Fix display
+span, a
     display inline-block
 
 // Remove default styles
@@ -114,14 +117,6 @@ img, svg, embed, object, iframe, video, audio, canvas
 img
     image-rendering optimizeQuality
 
-// Add the correct display in IE 9-
-video, audio, canvas
-    display inline-block
-
-// Fix default alignment
-progress
-    vertical-align baseline
-
 // Change the fill color to match the text color in all browsers
 svg
     fill currentColor
@@ -129,6 +124,10 @@ svg
     // Hide the overflow in IE
     &:not(:root)
         overflow hidden
+
+// Fix default alignment
+progress
+    vertical-align baseline
 
 // Add valid default styles
 h1, h2, h3, h4, h5, h6

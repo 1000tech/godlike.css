@@ -62,8 +62,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: block;
 }
 
-// Fix span display
-span {
+video, audio, canvas {
+    display: inline-block;
+}
+
+// Fix display
+span, a {
     display: inline-block;
 }
 
@@ -130,16 +134,6 @@ img {
     image-rendering: optimizeQuality;
 }
 
-// Add the correct display in IE 9-
-video, audio, canvas {
-    display: inline-block;
-}
-
-// Fix default alignment
-progress {
-    vertical-align: baseline;
-}
-
 // Change the fill color to match the text color in all browsers
 svg {
     fill: currentColor;
@@ -148,6 +142,11 @@ svg {
     &:not(:root) {
         overflow: hidden;
     }
+}
+
+// Fix default alignment
+progress {
+    vertical-align: baseline;
 }
 
 // Add valid default styles
