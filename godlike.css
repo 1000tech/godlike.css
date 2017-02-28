@@ -164,6 +164,7 @@ a > * {
 button,
 label,
 select,
+summary,
 [type='button'],
 [type='submit'],
 [type='reset'],
@@ -186,7 +187,8 @@ select,
   -webkit-appearance: button;
   font: inherit;
 }
-::-webkit-contacts-auto-fill-button {
+::-webkit-contacts-auto-fill-button,
+::-webkit-credentials-auto-fill-button {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
@@ -194,6 +196,9 @@ select,
 }
 :-webkit-autofill {
   box-shadow: inset 0 0 0 1000px #fff;
+}
+::-webkit-details-marker {
+  display: none;
 }
 [type="radio"] {
   -webkit-appearance: radio;
