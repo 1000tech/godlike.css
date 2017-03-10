@@ -169,7 +169,7 @@ button, label, select, summary, [type='button'], [type='submit'], [type='reset']
     position absolute
     right 0
 
-// Fix default autocomplete background color in Chrome
+// Fix default autocomplete background color in Chrome and Safari
 :-webkit-autofill
     box-shadow inset 0 0 0 1000px #fff
 
@@ -238,6 +238,10 @@ article
     img, embed, object, iframe, video
         display block
         margin auto
+
+    // Fix display
+    span, a
+        display inline
 
     // Add margins
     ul, ol, menu

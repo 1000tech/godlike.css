@@ -257,6 +257,10 @@ article video {
   display: block;
   margin: auto;
 }
+article span,
+article a {
+  display: inline;
+}
 article ul,
 article ol,
 article menu {
