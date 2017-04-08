@@ -290,11 +290,11 @@ article {
         margin-bottom: .7em;
         ul, ol, menu {
             margin: 0;
-            padding-left: 1em;
+            padding-left: 1.3em;
         }
         > li {
             &:before {
-                padding-right: .5em;
+                margin-right: .7em;
             }
             p {
                 display: inline;
@@ -306,12 +306,18 @@ article {
     ul, menu {
         > li {
             &:before {
-                content: '•';
-                font-family: Tahoma;
+                content: '';
+                width: .4em;
+                height: .4em;
+                display: inline-block;
+                vertical-align: 10%;
+                border-radius: 50%;
+                background: #000;
+                border: 1px solid #000;
             }
             li {
                 &:before {
-                    content: '○';
+                    background: transparent;
                 }
             }
         }

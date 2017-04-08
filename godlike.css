@@ -276,12 +276,12 @@ article ul menu,
 article ol menu,
 article menu menu {
   margin: 0;
-  padding-left: 1em;
+  padding-left: 1.3em;
 }
 article ul > li:before,
 article ol > li:before,
 article menu > li:before {
-  padding-right: 0.5em;
+  margin-right: 0.7em;
 }
 article ul > li p,
 article ol > li p,
@@ -290,12 +290,18 @@ article menu > li p {
 }
 article ul > li:before,
 article menu > li:before {
-  content: '•';
-  font-family: Tahoma;
+  content: '';
+  width: 0.4em;
+  height: 0.4em;
+  display: inline-block;
+  vertical-align: 10%;
+  border-radius: 50%;
+  background: #000;
+  border: 1px solid #000;
 }
 article ul > li li:before,
 article menu > li li:before {
-  content: '○';
+  background: transparent;
 }
 article ol {
   counter-reset: count;
