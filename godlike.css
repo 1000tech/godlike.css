@@ -149,8 +149,6 @@ ol,
 menu {
   margin: 0;
   padding: 0;
-  -moz-padding: 0;
-  -webkit-padding: 0;
   list-style: none;
 }
 input,
@@ -176,7 +174,8 @@ summary,
 }
 [type='search'],
 [type='range'],
-[type="radio"] ::-webkit-search-cancel-button,
+[type="radio"],
+::-webkit-search-cancel-button,
 ::-webkit-search-decoration,
 ::-webkit-outer-spin-button,
 ::-webkit-inner-spin-button,
