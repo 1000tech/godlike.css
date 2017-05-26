@@ -172,9 +172,11 @@ summary,
   user-select: none;
   cursor: pointer;
 }
+[type='button'],
+[type='submit'],
 [type='search'],
-[type='range'],
 [type="radio"],
+[type='range'],
 ::-webkit-search-cancel-button,
 ::-webkit-search-decoration,
 ::-webkit-outer-spin-button,
@@ -212,6 +214,9 @@ summary,
 input,
 textarea {
   width: 100%;
+}
+input {
+  text-overflow: ellipsis;
 }
 textarea {
   overflow: auto;

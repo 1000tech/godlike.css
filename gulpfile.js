@@ -5,6 +5,7 @@ var
     stylus = require('gulp-stylus'),
     csso = require('gulp-csso'),
     rename = require("gulp-rename"),
+    del = require("del"),
     nib = require('nib');
 
 // Compiling Stylus in CSS
@@ -29,11 +30,19 @@ gulp.task('cssmin', function() {
 
 // Watcher
 gulp.task('watch', function() {
-    watch('./*.styl', function() { gulp.start('css') });
+    watch('./*.styl', function() {
+        gulp.start('css')
+    });
 });
 
+// Clean old CSS
+gulp.task('clean', function() {
+    del('*.css')
+});
+
+// Main task
 gulp.task('default', function(cb) {
-    sequence(
-        'watch','css','cssmin',
+    return sequence(
+        'clean','watch','css','cssmin',
         cb);
 });

@@ -177,7 +177,7 @@ button, label, select, summary, [type='button'], [type='submit'], [type='reset']
 }
 
 // Fix appearance in Chrome and Safari
-[type='search'], [type='range'], [type="radio"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
+[type='button'], [type='submit'], [type='search'], [type="radio"], [type='range'], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
@@ -222,6 +222,11 @@ button, label, select, summary, [type='button'], [type='submit'], [type='reset']
 // Add valid default width
 input, textarea {
     width: 100%;
+}
+
+// Add text input with ellipsis
+input {
+    text-overflow: ellipsis;
 }
 
 // Add scrollbars, remove resize
