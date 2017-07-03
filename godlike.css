@@ -125,7 +125,7 @@ img {
   image-rendering: optimizeQuality;
 }
 svg {
-  fill: currentColor;
+  color: inherit;
 }
 svg:not(:root) {
   overflow: hidden;
