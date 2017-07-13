@@ -130,6 +130,9 @@ svg {
 svg:not(:root) {
   overflow: hidden;
 }
+code {
+  white-space: pre;
+}
 progress {
   vertical-align: baseline;
 }
