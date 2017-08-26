@@ -58,8 +58,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 video, audio, canvas
     display inline-block
 
-// Fix display
-span, a
+// Fix default display
+span
     display inline-block
 
 // Remove default styles
@@ -124,10 +124,6 @@ svg
     // Hide the overflow in IE
     &:not(:root)
         overflow hidden
-
-// Fix format code
-code
-    white-space pre
 
 // Fix default alignment
 progress
@@ -246,7 +242,7 @@ article
         margin auto
 
     // Fix display
-    span, a
+    span
         display inline
 
     // Add margins
