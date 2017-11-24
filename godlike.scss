@@ -110,13 +110,14 @@ button {
     letter-spacing: inherit;
 }
 
-// Remove default margins, add hyphenation
+// Remove default margins, add hyphenation, add correct highlight
 p {
     margin: 0;
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+    overflow: hidden;
 }
 
 // Fix font-weight

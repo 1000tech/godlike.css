@@ -103,6 +103,7 @@ p {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+  overflow: hidden;
 }
 b,
 strong {
