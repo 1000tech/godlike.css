@@ -61,7 +61,7 @@ body {
 }
 
 // Add the correct display HTML5-tags in IE 9-
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display: block;
 }
 
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Remove default margins
-ul, ol, menu {
+ul, ol {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -294,12 +294,12 @@ article {
     }
 
     // Add margins
-    ul, ol, menu {
+    ul, ol {
         margin-top: .7em;
         margin-bottom: .7em;
-        ul, ol, menu {
+        ul, ol {
             margin: 0;
-            padding-left: 1.3em;
+            padding-left: 1.2em;
         }
         > li {
             &:before {
@@ -311,28 +311,17 @@ article {
         }
     }
 
-    // Fix align marker
-    ul, menu {
+    // Fix marker style
+    ul {
         > li {
             &:before {
-                content: '';
-                width: .4em;
-                height: .4em;
-                display: inline-block;
-                vertical-align: 10%;
-                border-radius: 50%;
-                background: #000;
-                border: 1px solid #000;
-            }
-            li {
-                &:before {
-                    background: transparent;
-                }
+                content: '•';
+                font-family: "Tahoma";
             }
         }
     }
 
-    // Fix align counter
+    // Fix counter style
     ol {
         counter-reset: count;
         > li {
