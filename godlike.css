@@ -45,7 +45,6 @@ figure,
 footer,
 header,
 main,
-menu,
 nav,
 section,
 summary {
@@ -146,8 +145,7 @@ h6 {
   margin: 0;
 }
 ul,
-ol,
-menu {
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -266,47 +264,28 @@ article span {
   display: inline;
 }
 article ul,
-article ol,
-article menu {
+article ol {
   margin-top: 0.7em;
   margin-bottom: 0.7em;
 }
 article ul ul,
 article ol ul,
-article menu ul,
 article ul ol,
-article ol ol,
-article menu ol,
-article ul menu,
-article ol menu,
-article menu menu {
+article ol ol {
   margin: 0;
-  padding-left: 1.3em;
+  padding-left: 1.2em;
 }
 article ul > li:before,
-article ol > li:before,
-article menu > li:before {
+article ol > li:before {
   margin-right: 0.7em;
 }
 article ul > li p,
-article ol > li p,
-article menu > li p {
+article ol > li p {
   display: inline;
 }
-article ul > li:before,
-article menu > li:before {
-  content: '';
-  width: 0.4em;
-  height: 0.4em;
-  display: inline-block;
-  vertical-align: 10%;
-  border-radius: 50%;
-  background: #000;
-  border: 1px solid #000;
-}
-article ul > li li:before,
-article menu > li li:before {
-  background: transparent;
+article ul > li:before {
+  content: '•';
+  font-family: "Tahoma";
 }
 article ol {
   counter-reset: count;
