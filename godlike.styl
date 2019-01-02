@@ -35,6 +35,9 @@ body
     // Fix hyphenation
     word-wrap break-word
 
+    // Fix text decoration
+    text-decoration-skip objects
+
     // Fix rendering fonts
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
@@ -212,15 +215,23 @@ textarea
 // Remove click on the disabled state
 :disabled
     pointer-events none
+    cursor not-allowed
+
+    // Fix disabled text color
+    -webkit-text-fill-color inherit
 
 // Remove border and padding in Firefox
 ::-moz-focus-outer, ::-moz-focus-inner
     border 0
     padding 0
 
-// Fix placeholder color in Firefox 19+
-::placeholder, ::-moz-placeholder
+// Fix placeholder color
+::placeholder
     opacity 1
+    color inherit
+::-moz-placeholder // for Firefox 19+
+    opacity 1
+    color inherit
 
 // Remove default spacing
 table
