@@ -6,7 +6,7 @@ var
 
 // Compiling Stylus in CSS
 gulp.task('css', function() {
-    gulp.src('./*.styl')
+    return gulp.src('./*.styl')
         .pipe($.stylus({
             use: $.nib()
         }))
@@ -15,7 +15,7 @@ gulp.task('css', function() {
 
 // Compiling Stylus in CSS min
 gulp.task('cssmin', function() {
-    gulp.src('./*.styl')
+    return gulp.src('./*.styl')
         .pipe($.stylus({
             use: $.nib()
         }))
@@ -24,21 +24,17 @@ gulp.task('cssmin', function() {
         .pipe(gulp.dest('./'))
 });
 
-// Watcher
-gulp.task('watch', function() {
-    $.watch('./*.styl', function() {
-        gulp.start('css')
-    });
-});
-
 // Clean old CSS
 gulp.task('clean', function() {
-    $.del('*.css')
+    return $.del('*.css')
+});
+
+// Watcher
+gulp.task('watch', function() {
+    gulp.watch('./*.styl', gulp.series('css'));
 });
 
 // Main task
-gulp.task('default', function(cb) {
-    return $.sequence(
-        'clean','watch','css','cssmin',
-        cb);
-});
+gulp.task('default', gulp.series(
+    gulp.series('clean','css','cssmin','watch')
+));
