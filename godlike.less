@@ -185,7 +185,7 @@ button, label, select, summary, [type='button'], [type='submit'], [type='reset']
 }
 
 // Fix appearance in Chrome and Safari
-[type='button'], [type='submit'], [type='search'], [type="radio"], [type='range'], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
+select, [type='button'], [type='submit'], [type='search'], [type="radio"], [type='range'], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
@@ -287,61 +287,61 @@ td, th {
 }
 
 // Fix display elements in article
-article {
-
-    // Add margins
-    p:not(:empty) {
-        margin-top: .7em;
-        margin-bottom: .7em;
-    }
-
-    // Fix align graphical elements
-    img, embed, object, iframe, video {
-        display: block;
-        margin: auto;
-    }
-
-    // Fix display
-    span {
-        display: inline;
-    }
-
-    // Add margins
-    ul, ol {
-        margin-top: .7em;
-        margin-bottom: .7em;
-        ul, ol {
-            margin: 0;
-            padding-left: 1.2em;
-        }
-        > li {
-            &:before {
-                margin-right: .7em;
-            }
-            p {
-                display: inline;
-            }
-        }
-    }
-
-    // Fix marker style
-    ul {
-        > li {
-            &:before {
-                content: '•';
-                font-family: "Tahoma";
-            }
-        }
-    }
-
-    // Fix counter style
-    ol {
-        counter-reset: count;
-        > li {
-            &:before {
-                content: counter(count) '.';
-                counter-increment: count;
-            }
-        }
-    }
-}
+//article {
+//
+//    // Add margins
+//    p:not(:empty) {
+//        margin-top: .7em;
+//        margin-bottom: .7em;
+//    }
+//
+//    // Fix align graphical elements
+//    img, embed, object, iframe, video {
+//        display: block;
+//        margin: auto;
+//    }
+//
+//    // Fix display
+//    span {
+//        display: inline;
+//    }
+//
+//    // Add margins
+//    ul, ol {
+//        margin-top: .7em;
+//        margin-bottom: .7em;
+//        ul, ol {
+//            margin: 0;
+//            padding-left: 1.2em;
+//        }
+//        > li {
+//            &:before {
+//                margin-right: .7em;
+//            }
+//            p {
+//                display: inline;
+//            }
+//        }
+//    }
+//
+//    // Fix marker style
+//    ul {
+//        > li {
+//            &:before {
+//                content: '•';
+//                font-family: "Tahoma";
+//            }
+//        }
+//    }
+//
+//    // Fix counter style
+//    ol {
+//        counter-reset: count;
+//        > li {
+//            &:before {
+//                content: counter(count) '.';
+//                counter-increment: count;
+//            }
+//        }
+//    }
+//}
