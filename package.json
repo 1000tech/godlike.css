@@ -1,13 +1,13 @@
 {
   "name": "godlike.css",
-  "version": "3.7.2",
+  "version": "3.7.3",
   "description": "CSS for layout standardization and usability of web applications",
   "author": "1000.tech <info@1000.tech>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/1000tech/godlike.css.git"
   },
-  "license": "WTFPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/1000tech/godlike.css/issues"
   },
@@ -17,13 +17,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Godlike",
     "CSS",
     "Reset",
     "Normalize",
     "Less",
     "Stylus",
     "SCSS",
+    "Godlike",
     "1000.tech"
   ],
   "devDependencies": {

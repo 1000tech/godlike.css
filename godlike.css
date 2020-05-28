@@ -109,6 +109,14 @@ canvas {
   max-width: 100%;
   height: auto;
 }
+img,
+embed,
+object,
+iframe,
+video {
+  display: block;
+  margin: auto;
+}
 img {
   image-rendering: optimizeQuality;
 }

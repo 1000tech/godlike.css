@@ -1,6 +1,6 @@
 {
   "name": "godlike.css",
-  "version": "3.7.2",
+  "version": "3.7.3",
   "homepage": "https://github.com/1000tech/godlike.css",
   "authors": [
     "1000.tech <info@1000.tech>"
@@ -8,16 +8,16 @@
   "description": "CSS for layout standardization and usability of web applications",
   "main": "godlike.css",
   "keywords": [
-    "Godlike",
     "CSS",
     "Reset",
     "Normalize",
     "Less",
     "Stylus",
     "SCSS",
+    "Godlike",
     "1000.tech"
   ],
-  "license": "WTFPL",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

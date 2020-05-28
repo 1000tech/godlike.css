@@ -116,6 +116,11 @@ img, svg, embed, object, iframe, video, audio, canvas
     max-width 100%
     height auto
 
+// Fix align graphical elements
+img, embed, object, iframe, video
+    display block
+    margin auto
+
 // Fix Firefox transform scale image bug
 img
     image-rendering optimizeQuality
@@ -247,11 +252,6 @@ td, th
 //    p:not(:empty)
 //        margin-top .7em
 //        margin-bottom .7em
-//
-//    // Fix align graphical elements
-//    img, embed, object, iframe, video
-//        display block
-//        margin auto
 //
 //    // Fix display
 //    span
