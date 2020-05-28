@@ -18,52 +18,34 @@ A more modern alternative to reset.css and normalize.css
 
 ## Install
 
-##### NPM:
+#### NPM:
 ```smartyconfig
 npm i godlike.css
 ```
-
-##### Bower:
-```smartyconfig
-bower i godlike.css
-```
     
-##### CDN:
+#### CDN:
 
  https://cdnjs.com/libraries/godlike.css
     
-##### Download:
+#### Download:
 
  https://raw.githubusercontent.com/1000tech/godlike.css/master/godlike.css
 
 ## Usage
 
-### NPM
-
-PostCSS and [postcss-import](https://github.com/postcss/postcss-import):
-
-```css
-@import 'godlike.css/godlike.min.css';
-```
-
-### Bower
-
-**HTML:**
-
+### HTML:
 ```html
-<link rel="stylesheet" href="bower_components/godlike.css/godlike.min.css">
+<link rel="stylesheet" href="/node_modules/godlike.css/godlike.min.css">
 ```
 
-**CSS:**
-
+### CSS:
 ```css
-@import '../bower_components/godlike.css/godlike.min.css';
+@import '../node_modules/godlike.css/godlike.min.css';
 ```
 
-**Sass, Less, Stylus:**
-
+### Sass, Less, Stylus:
 ```css
-@import '../bower_components/godlike.css/godlike';
+@import '../node_modules/godlike.css/godlike';
 ```
 
 ## Demo
