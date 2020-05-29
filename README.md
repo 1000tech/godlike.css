@@ -18,16 +18,16 @@ A more modern alternative to reset.css and normalize.css
 
 ## Install
 
-#### NPM:
+### NPM:
 ```smartyconfig
 npm i godlike.css
 ```
     
-#### CDN:
+### CDN:
 
  https://cdnjs.com/libraries/godlike.css
     
-#### Download:
+### Download:
 
  https://raw.githubusercontent.com/1000tech/godlike.css/master/godlike.css
 

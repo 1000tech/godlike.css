@@ -38,11 +38,6 @@ body {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
-video,
-audio,
-canvas {
-  display: inline-block;
-}
 span {
   display: inline-block;
 }
@@ -95,6 +90,10 @@ p {
 b,
 strong {
   font-weight: 700;
+}
+audio,
+canvas {
+  display: inline-block;
 }
 img,
 svg,
