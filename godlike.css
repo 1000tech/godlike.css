@@ -149,8 +149,7 @@ ol {
 input,
 select,
 button,
-button > *,
-a > * {
+button > * {
   display: inline-block;
   vertical-align: middle;
 }

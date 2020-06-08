@@ -1,6 +1,6 @@
 # godlike.css
 CSS for layout standardization and usability of web applications from [1000.tech](http://1000.tech). 
-A more modern alternative to reset.css and normalize.css
+A more modern alternative to reset.css and normalize.css.
 
 <a href="https://github.com/1000tech/godlike.css">
 <img
