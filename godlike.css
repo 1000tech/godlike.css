@@ -193,7 +193,7 @@ select,
 :-webkit-autofill {
   box-shadow: inset 0 0 0 1000px #fff;
 }
-::-webkit-details-marker {
+::marker {
   display: none;
 }
 [type="radio"] {

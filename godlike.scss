@@ -210,7 +210,7 @@ select, [type='button'], [type='submit'], [type='search'], [type="radio"], [type
 }
 
 // Remove summary arrow
-::-webkit-details-marker {
+::marker {
     display: none;
 }
 
