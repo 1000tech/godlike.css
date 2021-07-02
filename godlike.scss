@@ -86,6 +86,11 @@ a, input, button, textarea, optgroup, select, fieldset, figure, legend, address 
 // Add default animation
 a, button, [type='button'], [type='submit'] {
     transition: color .25s, background .25s, opacity .25s;
+
+    // Children of buttons should not accept events
+    > * {
+        pointer-events: none;
+    }
 }
 
 // Remove default text-decoration, fix cursor

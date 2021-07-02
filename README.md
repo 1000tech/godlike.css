@@ -2,6 +2,8 @@
 CSS for layout standardization and usability of web applications from [1000.tech](http://1000.tech). 
 A more modern alternative to reset.css and normalize.css.
 
+Important: only use to create new projects!
+
 <a href="https://github.com/1000tech/godlike.css">
 <img
   src="http://1000.tech/img/pages/godlike/godlike.png" alt="godlike.css"
@@ -36,12 +38,12 @@ yarn add godlike.css
 
 ### Webpack:
 ```css
-@import 'godlike.css';
+@import 'godlike.css'
 ```
 
 ### Gulp:
 ```css
-@import "../node_modules/godlike.css/godlike"
+@import '../node_modules/godlike.css/godlike'
 ```
 
 ## Demo

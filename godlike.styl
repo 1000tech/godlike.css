@@ -79,6 +79,10 @@ a, input, button, textarea, optgroup, select, fieldset, figure, legend, address
 a, button, [type='button'], [type='submit']
     transition color .25s, background .25s, opacity .25s
 
+    // Children of buttons should not accept events
+    > *
+        pointer-events none
+
 // Remove default text-decoration, fix cursor
 a
     cursor pointer

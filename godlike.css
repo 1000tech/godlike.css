@@ -69,6 +69,12 @@ button,
 [type='submit'] {
   transition: color 0.25s, background 0.25s, opacity 0.25s;
 }
+a > *,
+button > *,
+[type='button'] > *,
+[type='submit'] > * {
+  pointer-events: none;
+}
 a {
   cursor: pointer;
   text-decoration: none;
