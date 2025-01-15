@@ -1,14 +1,8 @@
 # Godlike.css
-CSS for layout standardization and usability of web applications from [1000.tech](http://1000.tech). 
+CSS for layout standardization and usability of web applications from [MobiDevices](https://mobidevices.com). 
 A more modern alternative to reset.css and normalize.css.
 
 Important: only use to create new projects!
-
-<a href="https://github.com/1000tech/godlike.css">
-<img
-  src="http://1000.tech/img/pages/godlike/godlike.png" alt="godlike.css"
-  width="120" height="120">
-</a>
 
 ## What is Godlike.css ?
 
@@ -47,4 +41,4 @@ yarn add godlike.css
 ```
 
 ## Demo
-Used on [MobiDevices](https://mobidevices.ru)
+Used on [MobiDevices](https://mobidevices.com)
